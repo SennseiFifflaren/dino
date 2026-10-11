@@ -1,0 +1,302 @@
+[
+  {
+    "id": "l1-three-horns",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which dinosaur had three horns and a large bony frill?",
+    "choices": [
+      {
+        "id": "three-horns-0",
+        "text": "Stegosaurus"
+      },
+      {
+        "id": "three-horns-1",
+        "text": "Triceratops"
+      },
+      {
+        "id": "three-horns-2",
+        "text": "Diplodocus"
+      },
+      {
+        "id": "three-horns-3",
+        "text": "Tyrannosaurus rex"
+      }
+    ],
+    "correctAnswerId": "three-horns-1",
+    "explanation": "Triceratops had two long horns above its eyes, a shorter nose horn, and a bony frill behind its head.",
+    "hint": "Look for a dinosaur with a special head shape.",
+    "topic": "Head features",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html"
+  },
+  {
+    "id": "l1-rex-diet",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "What kind of food did Tyrannosaurus rex eat?",
+    "choices": [
+      {
+        "id": "rex-diet-0",
+        "text": "Leaves"
+      },
+      {
+        "id": "rex-diet-1",
+        "text": "Grass"
+      },
+      {
+        "id": "rex-diet-2",
+        "text": "Meat"
+      },
+      {
+        "id": "rex-diet-3",
+        "text": "Fruit"
+      }
+    ],
+    "correctAnswerId": "rex-diet-2",
+    "explanation": "Tyrannosaurus rex was a carnivore: a meat-eating dinosaur. Its powerful jaws and sharp teeth were suited to eating other animals.",
+    "hint": "Think about what sharp teeth can help an animal eat.",
+    "topic": "Diet",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html"
+  },
+  {
+    "id": "l1-back-plates",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which dinosaur had large plates along its back?",
+    "choices": [
+      {
+        "id": "back-plates-0",
+        "text": "Triceratops"
+      },
+      {
+        "id": "back-plates-1",
+        "text": "Iguanodon"
+      },
+      {
+        "id": "back-plates-2",
+        "text": "Brachiosaurus"
+      },
+      {
+        "id": "back-plates-3",
+        "text": "Stegosaurus"
+      }
+    ],
+    "correctAnswerId": "back-plates-3",
+    "explanation": "Stegosaurus had two rows of bony plates along its back and spikes on its tail. Scientists still study what the plates were used for.",
+    "hint": "Think about the shapes along the dinosaur’s back.",
+    "topic": "Body features",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html"
+  },
+  {
+    "id": "l1-long-neck",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which of these dinosaurs had a very long neck?",
+    "choices": [
+      {
+        "id": "long-neck-0",
+        "text": "Tyrannosaurus rex"
+      },
+      {
+        "id": "long-neck-1",
+        "text": "Triceratops"
+      },
+      {
+        "id": "long-neck-2",
+        "text": "Brachiosaurus"
+      },
+      {
+        "id": "long-neck-3",
+        "text": "Ankylosaurus"
+      }
+    ],
+    "correctAnswerId": "long-neck-2",
+    "explanation": "Brachiosaurus was a long-necked, plant-eating dinosaur. Its front legs were longer than its back legs, giving its body a sloping shape.",
+    "hint": "Compare the body shapes of these dinosaurs.",
+    "topic": "Body features",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html"
+  },
+  {
+    "id": "l1-tail-club",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which dinosaur had a heavy bony club at the end of its tail?",
+    "choices": [
+      {
+        "id": "tail-club-0",
+        "text": "Diplodocus"
+      },
+      {
+        "id": "tail-club-1",
+        "text": "Ankylosaurus"
+      },
+      {
+        "id": "tail-club-2",
+        "text": "Iguanodon"
+      },
+      {
+        "id": "tail-club-3",
+        "text": "Spinosaurus"
+      }
+    ],
+    "correctAnswerId": "tail-club-1",
+    "explanation": "Ankylosaurus had armour on its body and a bony tail club. The club could be used for defence.",
+    "hint": "Look for a dinosaur with body armour.",
+    "topic": "Defence",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html"
+  },
+  {
+    "id": "l1-plant-eater",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "What did Diplodocus eat?",
+    "choices": [
+      {
+        "id": "plant-eater-0",
+        "text": "Fish"
+      },
+      {
+        "id": "plant-eater-1",
+        "text": "Insects"
+      },
+      {
+        "id": "plant-eater-2",
+        "text": "Other dinosaurs"
+      },
+      {
+        "id": "plant-eater-3",
+        "text": "Plants"
+      }
+    ],
+    "correctAnswerId": "plant-eater-3",
+    "explanation": "Diplodocus was a herbivore, which means a plant eater. It had a long neck, a long tail, and peg-like teeth.",
+    "hint": "Its teeth helped it gather food, rather than tear meat.",
+    "topic": "Diet",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/diplodocus.html"
+  },
+  {
+    "id": "l1-sail-back",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which dinosaur had tall back spines that formed a sail-like shape?",
+    "choices": [
+      {
+        "id": "sail-back-0",
+        "text": "Spinosaurus"
+      },
+      {
+        "id": "sail-back-1",
+        "text": "Triceratops"
+      },
+      {
+        "id": "sail-back-2",
+        "text": "Ankylosaurus"
+      },
+      {
+        "id": "sail-back-3",
+        "text": "Diplodocus"
+      }
+    ],
+    "correctAnswerId": "sail-back-0",
+    "explanation": "Spinosaurus had tall spines on its back that formed a sail-like shape. Scientists are still investigating how it used this feature.",
+    "hint": "Think about a dinosaur with an unusual outline.",
+    "topic": "Body features",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html"
+  },
+  {
+    "id": "l1-thumb-spike",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which dinosaur had a pointed spike on each thumb?",
+    "choices": [
+      {
+        "id": "thumb-spike-0",
+        "text": "Stegosaurus"
+      },
+      {
+        "id": "thumb-spike-1",
+        "text": "Diplodocus"
+      },
+      {
+        "id": "thumb-spike-2",
+        "text": "Iguanodon"
+      },
+      {
+        "id": "thumb-spike-3",
+        "text": "Tyrannosaurus rex"
+      }
+    ],
+    "correctAnswerId": "thumb-spike-2",
+    "explanation": "Iguanodon had a large spike on each thumb. It was a plant-eating dinosaur with hands that were very different from ours.",
+    "hint": "Think about a feature on a dinosaur’s hand.",
+    "topic": "Body features",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/iguanodon.html"
+  },
+  {
+    "id": "l1-rex-legs",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "How many legs did Tyrannosaurus rex walk on?",
+    "choices": [
+      {
+        "id": "rex-legs-0",
+        "text": "Two"
+      },
+      {
+        "id": "rex-legs-1",
+        "text": "Four"
+      },
+      {
+        "id": "rex-legs-2",
+        "text": "Six"
+      },
+      {
+        "id": "rex-legs-3",
+        "text": "Eight"
+      }
+    ],
+    "correctAnswerId": "rex-legs-0",
+    "explanation": "Tyrannosaurus rex walked on its two powerful back legs. Its arms were much smaller than its legs.",
+    "hint": "Compare its arms with its back legs.",
+    "topic": "Movement",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html"
+  },
+  {
+    "id": "l1-triceratops-diet",
+    "level": 1,
+    "difficulty": "beginner",
+    "text": "Which food would suit a plant-eating Triceratops?",
+    "choices": [
+      {
+        "id": "triceratops-diet-0",
+        "text": "Fish"
+      },
+      {
+        "id": "triceratops-diet-1",
+        "text": "Other dinosaurs"
+      },
+      {
+        "id": "triceratops-diet-2",
+        "text": "Insects"
+      },
+      {
+        "id": "triceratops-diet-3",
+        "text": "Leaves"
+      }
+    ],
+    "correctAnswerId": "triceratops-diet-3",
+    "explanation": "Triceratops was a herbivore. Its beak and teeth helped it eat plants, even though it had impressive horns.",
+    "hint": "Horns do not tell us what an animal eats.",
+    "topic": "Diet",
+    "source": "Natural History Museum, London — Dino Directory",
+    "referenceUrl": "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html"
+  }
+]
