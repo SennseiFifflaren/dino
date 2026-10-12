@@ -5,7 +5,9 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -16,6 +18,8 @@ import com.dinoexpert.ui.theme.Forest
 
 @Composable
 fun SettingsScreen(state: GameUiState, dispatch: (GameAction) -> Unit) {
+    var showCredits by rememberSaveable { mutableStateOf(false) }
+    val context = LocalContext.current
     Column(
         Modifier.widthIn(max = 700.dp).fillMaxWidth().verticalScroll(rememberScrollState()).padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
@@ -24,10 +28,22 @@ fun SettingsScreen(state: GameUiState, dispatch: (GameAction) -> Unit) {
         Text(stringResource(R.string.settings_description), style = MaterialTheme.typography.bodyLarge)
         SettingToggle(stringResource(R.string.sound), stringResource(R.string.sound_description),
             state.progress.settings.soundEnabled, !state.saving) { dispatch(GameAction.Sound(it)) }
+        SettingToggle(stringResource(R.string.voice), stringResource(R.string.voice_description),
+            state.progress.settings.voiceEnabled, !state.saving) { dispatch(GameAction.Voice(it)) }
         SettingToggle(stringResource(R.string.reduce_animation), stringResource(R.string.reduce_description),
             state.progress.settings.reducedAnimation, !state.saving) { dispatch(GameAction.ReducedAnimation(it)) }
         Text(stringResource(R.string.offline_note), style = MaterialTheme.typography.bodyMedium)
-        Button(onClick = { dispatch(GameAction.Home) }, modifier = Modifier.fillMaxWidth().heightIn(min = 56.dp)) { Text(stringResource(R.string.home)) }
+        Text(stringResource(R.string.talkback_voice), style = MaterialTheme.typography.bodyMedium)
+        OutlinedButton(onClick = { showCredits = true }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text(stringResource(R.string.audio_credits)) }
+        Button(onClick = { dispatch(GameAction.Back) }, modifier = Modifier.fillMaxWidth().heightIn(min = 56.dp)) { Text(stringResource(R.string.back)) }
+    }
+    if (showCredits) {
+        val credits = remember(context) { context.assets.open("audio/CREDITS.txt").bufferedReader().use { it.readText() } }
+        AlertDialog(
+            onDismissRequest = { showCredits = false }, title = { Text(stringResource(R.string.audio_credits)) },
+            text = { Text(credits, Modifier.heightIn(max = 420.dp).verticalScroll(rememberScrollState())) },
+            confirmButton = { TextButton(onClick = { showCredits = false }) { Text(stringResource(R.string.close)) } },
+        )
     }
 }
 

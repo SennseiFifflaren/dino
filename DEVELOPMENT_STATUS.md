@@ -1,58 +1,62 @@
 # Development status
 
-## Phase 0 — complete
+## Current release: 0.3.0 — Phases 1–3 implemented
 
-Inspected the empty checkout and tool availability. See [technical plan](docs/IMPLEMENTATION_PLAN.md) for the stack, package structure, state model, navigation, and milestone checklist.
+The five-level game and offline Professor Fossil narration are implemented and build-validated. Physical-device/UI/listening QA and production release work remain in Phase 4. See [README](README.md), [extension plan](docs/PHASES_2_3_PLAN.md), and [manual QA](docs/QA_CHECKLIST.md).
 
-## Phase 1 — implemented and build-validated; device QA pending
+## Phase 0 and Phase 1 — completed implementation milestones
 
-- [x] Android project with Gradle Kotlin DSL, Android 26–36 support.
-- [x] Pure Kotlin quiz engine, serial MVVM actions and DataStore persistence.
-- [x] Ten curated beginner questions in bundled JSON with explanations, hints and attribution.
-- [x] Menu, play/continue, retries, stable shuffled A–D answers, correct feedback and explicit Next.
-- [x] Completion badge and replay of Level 1.
-- [x] Professor Fossil original Canvas illustration and five expression states.
-- [x] Scrollable phone layout and width-based two-column tablet foundation.
-- [x] System insets, scalable type, text/icon answer status, 48dp+ controls, sound and reduced-motion settings.
-- [x] JVM rule/content/save tests and Android Compose/DataStore tests written.
-- [x] Debug APK, Android test APK, JVM results and lint results verified.
-- [ ] Device/emulator execution and manual accessibility/visual QA (environment limitation).
+The originally empty repository became the first playable ten-question MVP. Its Gradle wrapper, Kotlin/Compose architecture, pure quiz rules, DataStore persistence, Canvas character and debug APK were validated. Fourteen JVM tests passed for that milestone. The original `0.1.0` APK remains under `releases/`.
 
-## Scope boundaries
+## Phase 2 — implemented and milestone tested
 
-Only Phase 1 is authorized in this execution. Levels 2–5, full level selection/unlocking UI, the 50-question bank, and final achievement are not implemented. The engine is prepared for multiple levels; MVP only exposes the one available level.
+- [x] Five named levels and fifty curated questions, ten per level, with explanations, hints and museum attribution.
+- [x] Adaptive level map with backend and UI locked-level gating.
+- [x] Sequential unlocks, permanent badges, completed-level replay and final expert achievement.
+- [x] Stable shuffled choices, unlimited retries, disabled wrong choices, explicit Next and duplicate prevention retained.
+- [x] Paused sessions preserve unfinished adventures when switching levels/replaying.
+- [x] Pending celebrations restore after reopening; version-1 MVP saves remain compatible.
+- [x] Bank validation and twenty gameplay/content/save tests passed before Phase 3.
+- [x] Phase 2 debug APK, Android test APK and lint passed.
 
-## Remaining phases — not started
+## Phase 3 — implemented and build/audio tested
 
-2. Expand and editorially review all fifty questions; add level selection, progression, final achievement and comprehensive save tests.
-3. Refine art, animations, prehistoric scenery, bundled sound assets and accessibility/device layouts.
-4. Full release QA on physical phones and tablets, rotation, font scaling, TalkBack, offline restart and release packaging.
+- [x] Refined original Professor Fossil drawing: shaded skin/outfit, expressive eyes, gestures, breathing/blinking, speaking mouth and success reactions.
+- [x] Prehistoric mountains/trail/fossil scenery, five illustrated badge designs, animated answer/progress feedback and short confetti.
+- [x] Three original, licensed soft chime recordings.
+- [x] 360 bundled British English voice clips: all questions, 200 choices, explanations, hints, Option A–D labels and character dialogue.
+- [x] Spoken choice order follows the shuffled stable IDs; wrong feedback does not reveal the answer; narration never advances the game.
+- [x] Read/Stop controls, separate voice/effects settings, lifecycle/audio-focus cancellation and TalkBack-aware automatic narration.
+- [x] Reduced-motion support, scrollable phone/tablet layouts, system insets, scalable fonts, readable locked cards and 48dp+ targets.
+- [x] Offline audio credits, provenance/checksums, generation scripts and asset licenses.
+- [x] Fresh final run: 25 JVM tests passed with zero failures, errors or skips.
+- [x] All 360 speech clips and three chimes actually decoded and checked for source coverage, silence and clipping. Initial decoder peaks were fixed by regenerating with headroom; final checks passed.
+- [x] Final debug and Android test APKs built; lint passed with zero errors and six dependency-update advisories. Tested stable dependencies remain pinned.
+- [x] APK signing verified; old/new APK certificates match, allowing in-place updates without uninstalling the MVP.
+- [x] Packaged bank and all speech files match source assets; all Ogg entries are uncompressed for Android `openFd`; no Internet permission or speech model is bundled.
+- [ ] Seven Android tests compiled but remain unrun on this cloud machine.
+- [ ] Device visual, orientation, font scaling, TalkBack, playback/phonetic and subjective voice review.
 
-## Validation results — 2026-10-11
-
-Command (after `source scripts/cloud-env.sh`):
+## Validation — 2026-10-12
 
 ```bash
+source scripts/cloud-env.sh
 ./gradlew :core:test :app:assembleDebug :app:assembleDebugAndroidTest :app:lintDebug --no-daemon
+python3 scripts/audio/validate_audio.py
 ```
 
-- **Passed:** 14 JVM tests; zero failures, errors or skips. They use the actual bundled JSON and exercise retries, stable shuffling, duplicate actions, explicit Next, ten-question completion, engine-level locks/unlocks, replay, saves and invalid data.
-- **Passed:** debug APK build (`app/build/outputs/apk/debug/app-debug.apk`) and Android test APK build. APK signature verified with `apksigner`.
-- **Passed:** packaged question asset equals the source bank; APK manifest confirms minimum API 26, target API 36 and no Internet permission.
-- **Passed:** Android lint, zero errors and one `NewerVersionAvailable` advisory (coroutines 1.11.0 exists; retain the tested stable 1.10.2 pin for this milestone).
-- **Passed:** cloud setup helper executed and repeated successfully; official Gradle distribution and wrapper JAR, JDK archive, and SDK tools checksum verification retained. Java TLS trust uses the supplied cloud CA bundle plus the standard JDK trust store.
-- **Built but unrun:** four Android tests for Compose interaction/layout, DataStore, activity recreation and relaunch. Current machine has no KVM; adb cannot create its user key/cache directory because the actual home filesystem is read-only, even after a scoped permission grant. Device UI, rotation, font scaling and TalkBack results are not claimed.
-- **Unverified externally:** live museum source pages; retrieval returned proxy CONNECT 403. Established facts were reviewed locally; final editorial reference verification remains. See `docs/CONTENT_REVIEW.md`.
+The core test task explicitly tracks the Android asset directory, so changing the question bank or voice files invalidates cached test results. The final 25-test run was executed against the current recordings and bank.
 
-All project files are newly created in the original checkout; no existing application was overwritten. The initial project commit includes the verified debug APK and its SHA-256 checksum under `releases/`. No later phase was started.
+Latest APK: `releases/dino-expert-0.3.0-debug.apk` (18,222,482 bytes), with a matching SHA-256 file. Reports are in `core/build/reports/tests/test/` and `app/build/reports/lint-results-debug.*`.
 
-## Reusable cloud configuration
+## Known limitations and remaining Phase 4
 
-Saved `install_script` and `start_skill` as an environment draft, plus the custom allowed domain `www.nhm.ac.uk` for editorial review. Saves are confirmed; publication and restoration in a fresh task have not been tested. Review and save the changes in environment settings, then publish the environment to retain the prepared snapshot. No runtime secrets are required for this game.
+The machine has no KVM acceleration, and adb cannot create its actual user home key/cache directory on the read-only home filesystem. Device tests are built, not executed. Use Android Studio or a supported physical device for the seven tests and manual checklist; no device playback or visual/accessibility success is claimed.
 
-## Recommended next actions
+The main museum articles and several directory pages are now reachable and were inspected. Six legacy NHM directory links timed out; supplementary AMNH anatomy pages were retrieved. Their primary-page availability remains for editorial recheck, documented in [content review](docs/CONTENT_REVIEW.md). Scientific uncertainty is phrased explicitly in the bank.
 
-1. Open in Android Studio or install the debug APK on a supported device; run the four Android tests and `docs/QA_CHECKLIST.md`.
-2. Finish live museum reference verification when access is available.
-3. Review/save/publish the reusable cloud configuration if retaining this environment.
-4. Begin Phase 2 only after explicit instruction.
+Phase 4 release QA, production signing and Play Store distribution have not been performed. No ads, accounts, purchases, analytics, online databases or personal information were added.
+
+## Reusable cloud development
+
+JDK/SDK/Gradle tools remain outside the checkout under `/workspace/tooling`. Run the cloud helper to initialize proxy/CA settings in a new task, then build and validate the committed assets. Voice-model tooling is needed only when regenerating speech. Existing task checkouts are isolated; no additional worktree is needed.

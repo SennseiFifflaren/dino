@@ -5,7 +5,7 @@ import com.dinoexpert.core.QuestionBank
 import com.dinoexpert.core.QuizLevel
 
 class QuestionRepository(private val context: Context) {
-    // One bundled English bank in Phase 1. Future localized banks retain stable IDs.
+    // Future localized banks retain these stable IDs for save compatibility.
     fun load(): List<QuizLevel> = context.assets.open("questions_en.json")
-        .bufferedReader().use { QuestionBank.parse(it.readText(), 1..1) }
+        .bufferedReader().use { QuestionBank.parse(it.readText(), 1..5) }
 }

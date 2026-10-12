@@ -5,7 +5,7 @@ import kotlinx.serialization.json.Json
 object QuestionBank {
     private val json = Json { ignoreUnknownKeys = true }
 
-    fun parse(contents: String, expectedLevels: IntRange = 1..1): List<QuizLevel> {
+    fun parse(contents: String, expectedLevels: IntRange = 1..5): List<QuizLevel> {
         val questions = json.decodeFromString<List<QuizQuestion>>(contents)
         val errors = validate(questions, expectedLevels)
         require(errors.isEmpty()) { errors.joinToString("\n") }

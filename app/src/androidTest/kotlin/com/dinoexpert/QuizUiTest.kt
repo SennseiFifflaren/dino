@@ -30,14 +30,14 @@ class QuizUiTest {
         val state = mutableStateOf(GameUiState(Screen.Quiz, engine.start(PlayerProgress(), 1), engine))
         compose.setContent {
             DinoTheme {
-                QuizScreen(state.value, true) { action ->
+                QuizScreen(state.value, true, dispatch = { action ->
                     val p = state.value.progress
                     state.value = state.value.copy(progress = when (action) {
                         is GameAction.Answer -> engine.answer(p, action.id)
                         GameAction.Next -> engine.next(p)
                         else -> p
                     })
-                }
+                })
             }
         }
         val session = state.value.progress.session!!
@@ -62,7 +62,7 @@ class QuizUiTest {
         val p = engine.start(PlayerProgress(), 1)
         compose.setContent {
             CompositionLocalProvider(LocalDensity provides Density(.5f, 1f)) {
-                DinoTheme { Box(Modifier.width(800.dp)) { QuizScreen(GameUiState(Screen.Quiz, p, engine), true) {} } }
+                DinoTheme { Box(Modifier.width(800.dp)) { QuizScreen(GameUiState(Screen.Quiz, p, engine), true, dispatch = {}) } }
             }
         }
         val session = p.session!!

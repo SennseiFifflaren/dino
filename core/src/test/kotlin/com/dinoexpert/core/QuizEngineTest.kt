@@ -12,10 +12,10 @@ class QuizEngineTest {
     private fun start() = engine.start(PlayerProgress(), 1, Random(42))
     private fun correct(p: PlayerProgress) = engine.answer(p, engine.question(p.session!!).correctAnswerId)
 
-    @Test fun bundledBankHasTenValidOriginalQuestions() {
+    @Test fun bundledBankHasFiftyValidOriginalQuestions() {
         val questions = levels.flatMap { it.questions }
-        assertEquals(10, questions.size)
-        assertTrue(QuestionBank.validate(questions, 1..1).isEmpty())
+        assertEquals(50, questions.size)
+        assertTrue(QuestionBank.validate(questions, 1..5).isEmpty())
         assertTrue(questions.all { it.choices.size == 4 })
     }
 
@@ -76,7 +76,7 @@ class QuizEngineTest {
         assertEquals(p, engine.start(p, 0))
         assertEquals(p, engine.start(p, 2))
         val level2 = QuizLevel(2, levels[0].questions.map { q -> q.copy(id = "two-${q.id}", level = 2) })
-        val twoLevelEngine = QuizEngine(levels + level2)
+        val twoLevelEngine = QuizEngine(levels.take(1) + level2)
         assertEquals(p, twoLevelEngine.start(p, 2))
         var completed = twoLevelEngine.start(p, 1)
         repeat(10) {
@@ -160,4 +160,92 @@ class QuizEngineTest {
         assertTrue(orders.size > 1)
         assertTrue(orders.all { it.toSet() == levels[0].questions[0].choices.map { c -> c.id }.toSet() })
     }
+
+    private fun completeLevel(p: PlayerProgress, level: Int): PlayerProgress {
+        var progress = engine.openLevel(p, level, Random(level))
+        repeat(10) { progress = engine.next(correct(progress), Random(it)) }
+        return progress
+    }
+
+    @Test fun allFiveLevelsUnlockInOrderAndFinalAchievementRequiresFiftyCorrectAnswers() {
+        var p = PlayerProgress()
+        for (level in 1..5) {
+            assertEquals(level, p.highestUnlockedLevel)
+            if (level < 5) assertEquals(p, engine.openLevel(p, level + 1))
+            assertFalse(engine.allLevelsCompleted(p))
+            p = completeLevel(p, level)
+            assertEquals((1..level).toSet(), p.completedLevels)
+            assertEquals(level, p.celebrationLevel)
+            assertEquals((level + 1).coerceAtMost(5), p.highestUnlockedLevel)
+            assertEquals(p, ProgressCodec.decode(ProgressCodec.encode(p), engine))
+        }
+        assertTrue(engine.allLevelsCompleted(p))
+        assertEquals(p, engine.next(p))
+    }
+
+    @Test fun replayDoesNotLoseAnUnfinishedDifferentLevel() {
+        var p = completeLevel(PlayerProgress(), 1)
+        p = engine.openLevel(p, 2)
+        p = engine.next(correct(p))
+        val second = p.session!!
+        val q = engine.question(second)
+        p = engine.answer(p, q.choices.first { it.id != q.correctAnswerId }.id)
+        val unfinished = p.session!!
+        p = engine.openLevel(p, 1)
+        assertEquals(unfinished, p.parkedSessions[2])
+        p = ProgressCodec.decode(ProgressCodec.encode(p), engine)
+        repeat(10) { p = engine.next(correct(p)) }
+        assertEquals(setOf(1), p.completedLevels)
+        assertEquals(2, p.highestUnlockedLevel)
+        p = engine.continueAdventure(p)
+        assertEquals(unfinished, p.session)
+        assertTrue(p.parkedSessions.isEmpty())
+    }
+
+    @Test fun switchingBackResumesTheStableOrderAndWrongAttempts() {
+        var p = completeLevel(PlayerProgress(), 1)
+        p = engine.openLevel(p, 2)
+        val first = p.session!!
+        val q = engine.question(first)
+        p = engine.answer(p, q.choices.first { it.id != q.correctAnswerId }.id)
+        val saved = p.session!!
+        p = engine.openLevel(p, 1)
+        p = engine.openLevel(p, 2)
+        assertEquals(saved, p.session)
+        assertEquals(1, p.parkedSessions.size)
+        assertEquals(p, engine.openLevel(p, 2))
+    }
+
+    @Test fun legacyMvpSaveUnlocksLevelTwoAndKeepsCorrectFeedback() {
+        val old = """{"version":1,"highestUnlockedLevel":1,"completedLevels":[1],"settings":{"soundEnabled":false,"reducedAnimation":true}}"""
+        val restored = ProgressCodec.decode(old, engine)
+        assertEquals(2, restored.highestUnlockedLevel)
+        assertEquals(setOf(1), restored.completedLevels)
+        assertFalse(restored.settings.soundEnabled)
+        assertTrue(restored.settings.voiceEnabled)
+        assertTrue(restored.parkedSessions.isEmpty())
+        val activeMvp = correct(start())
+        assertEquals(activeMvp, ProgressCodec.decode(ProgressCodec.encode(activeMvp), engine))
+    }
+
+    @Test fun restorationRejectsInventedUnlocksAndInvalidParkedSessions() {
+        val first = start().session!!
+        val forged = PlayerProgress(highestUnlockedLevel = 5, completedLevels = setOf(5),
+            parkedSessions = mapOf(2 to first, 5 to first.copy(level = 5)), celebrationLevel = 5)
+        val restored = engine.restore(forged)
+        assertEquals(1, restored.highestUnlockedLevel)
+        assertTrue(restored.completedLevels.isEmpty())
+        assertTrue(restored.parkedSessions.isEmpty())
+        assertNull(restored.celebrationLevel)
+    }
+
+    @Test fun completingAReplayDoesNotRelockAnyLevels() {
+        var p = PlayerProgress()
+        (1..5).forEach { p = completeLevel(p, it) }
+        p = completeLevel(p, 2)
+        assertEquals(5, p.highestUnlockedLevel)
+        assertEquals((1..5).toSet(), p.completedLevels)
+        assertTrue(engine.allLevelsCompleted(p))
+    }
+
 }

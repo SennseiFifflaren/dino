@@ -1,0 +1,21 @@
+Professor Fossil voice
+
+Original game text and generated recordings for Dino Expert. Warm British English delivery generated with the Piper VCTK medium model, speaker p226, with a slightly slower pace and modified synthesis settings. No speech model or engine is distributed in the app; it plays bundled recordings offline.
+
+Source corpus: CSTR VCTK Corpus, version 0.92 (2019), Christophe Veaux, Junichi Yamagishi and Kirsten MacDonald, University of Edinburgh.
+https://datashare.ed.ac.uk/handle/10283/3443
+Voice model: rhasspy/piper-voices, en_GB-vctk-medium, revision c10ece1aade47bb51c153c893d14e5bf8e5b7117.
+https://huggingface.co/rhasspy/piper-voices/tree/c10ece1aade47bb51c153c893d14e5bf8e5b7117/en/en_GB/vctk/medium
+Corpus and bundled generated voice recordings: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+Changes: original English game text, speaker selection, slower synthesis, pronunciation substitutions, level limiting and Ogg encoding. Source authors do not endorse Dino Expert.
+Piper generation software is a development tool (GPL-3.0); it is not bundled or used at runtime. Base voice training uses the public-domain LJSpeech/lessac corpus.
+
+Sound effects
+
+Correct, retry and completion chimes are original synthesized recordings created for this game by scripts/audio/generate_sfx.py. CC0 1.0 Universal dedication applies to these three recordings.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Graphics
+
+Professor Fossil, scenery, badges and celebration graphics are original Kotlin Canvas drawings made for Dino Expert. No external art files or fonts are bundled.

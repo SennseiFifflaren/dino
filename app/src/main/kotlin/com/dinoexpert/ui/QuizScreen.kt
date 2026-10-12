@@ -1,6 +1,10 @@
 package com.dinoexpert.ui
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.runtime.getValue
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -22,7 +26,10 @@ import com.dinoexpert.ui.theme.Ink
 import com.dinoexpert.ui.theme.RetryRust
 
 @Composable
-fun QuizScreen(state: GameUiState, reducedAnimation: Boolean, dispatch: (GameAction) -> Unit) {
+fun QuizScreen(
+    state: GameUiState, reducedAnimation: Boolean, dispatch: (GameAction) -> Unit,
+    voicePlaying: Boolean = false, onReadQuestion: () -> Unit = {}, onStopVoice: () -> Unit = {},
+) {
     val engine = state.engine ?: return
     val session = state.progress.session ?: return
     val question = engine.question(session)
@@ -34,44 +41,61 @@ fun QuizScreen(state: GameUiState, reducedAnimation: Boolean, dispatch: (GameAct
     }
     val answered = session.questionIndex + if (session.answeredCorrectly) 1 else 0
     val progressLabel = stringResource(R.string.answered_progress, answered, total)
+    val animatedProgress by animateFloatAsState(answered.toFloat() / total, tween(if (reducedAnimation) 0 else 400), label = "question progress")
     BoxWithConstraints(Modifier.widthIn(max = 1100.dp).fillMaxWidth()) {
         val wide = maxWidth >= 600.dp
         Column(
             Modifier.fillMaxWidth().verticalScroll(rememberScrollState()).padding(if (wide) 28.dp else 20.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Text(stringResource(R.string.level_label), style = MaterialTheme.typography.labelLarge, color = Forest)
+            Text(stringResource(R.string.level_label, session.level, levelTitle(session.level)), style = MaterialTheme.typography.labelLarge, color = Forest)
             Text(stringResource(R.string.question_progress, session.questionIndex + 1, total), style = MaterialTheme.typography.titleLarge)
             LinearProgressIndicator(
-                progress = { answered.toFloat() / total },
+                progress = { animatedProgress },
                 modifier = Modifier.fillMaxWidth().height(8.dp).semantics { contentDescription = progressLabel },
             )
             if (wide) {
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(24.dp)) {
-                    ProfessorFossilCharacter(characterState, reducedAnimation, Modifier.width(270.dp))
+                    ProfessorFossilCharacter(characterState, reducedAnimation, Modifier.width(270.dp), voicePlaying)
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                        Dialogue(stringResource(R.string.asking))
+                        Dialogue(stringResource(when {
+                            session.answeredCorrectly -> R.string.correct
+                            session.wrongAnswerIds.isNotEmpty() -> R.string.retry
+                            else -> R.string.asking
+                        }))
                         QuestionText(question)
                     }
                 }
             } else {
                 Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    ProfessorFossilCharacter(characterState, reducedAnimation)
+                    ProfessorFossilCharacter(characterState, reducedAnimation, speaking = voicePlaying)
                     if (session.wrongAnswerIds.isEmpty() && !session.answeredCorrectly) Dialogue(stringResource(R.string.asking), Modifier.fillMaxWidth())
                     QuestionText(question)
                 }
+            }
+            OutlinedButton(
+                onClick = if (voicePlaying) onStopVoice else onReadQuestion,
+                enabled = state.progress.settings.voiceEnabled,
+                modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp),
+            ) {
+                Text(stringResource(when {
+                    !state.progress.settings.voiceEnabled -> R.string.voice_off
+                    voicePlaying -> R.string.stop_reading
+                    session.answeredCorrectly -> R.string.read_discovery
+                    else -> R.string.read_question
+                }))
             }
             if (wide) {
                 session.choiceOrder.chunked(2).forEachIndexed { rowIndex, row ->
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
                         row.forEachIndexed { index, id ->
-                            AnswerButton(question, session, id, rowIndex * 2 + index, state.saving, Modifier.weight(1f), dispatch)
+                            AnswerButton(question, session, id, rowIndex * 2 + index, state.saving, reducedAnimation, Modifier.weight(1f), dispatch)
                         }
                     }
                 }
             } else {
                 session.choiceOrder.forEachIndexed { index, id ->
-                    AnswerButton(question, session, id, index, state.saving, Modifier.fillMaxWidth(), dispatch)
+                    AnswerButton(question, session, id, index, state.saving, reducedAnimation, Modifier.fillMaxWidth(), dispatch)
                 }
             }
             if (session.answeredCorrectly) {
@@ -115,13 +139,14 @@ private fun QuestionText(question: QuizQuestion) {
 
 @Composable
 private fun AnswerButton(
-    question: QuizQuestion, session: QuizSession, id: String, index: Int, saving: Boolean,
+    question: QuizQuestion, session: QuizSession, id: String, index: Int, saving: Boolean, reducedAnimation: Boolean,
     modifier: Modifier, dispatch: (GameAction) -> Unit,
 ) {
     val choice = question.choices.first { it.id == id }
     val correct = session.answeredCorrectly && id == question.correctAnswerId
     val wrong = id in session.wrongAnswerIds
-    val background = when { correct -> Color(0xFFDDF1DE); wrong -> Color(0xFFFFE9D4); else -> MaterialTheme.colorScheme.surface }
+    val targetBackground = when { correct -> Color(0xFFDDF1DE); wrong -> Color(0xFFFFE9D4); else -> MaterialTheme.colorScheme.surface }
+    val background by animateColorAsState(targetBackground, tween(if (reducedAnimation) 0 else 220), label = "answer feedback")
     val foreground = when { correct -> CorrectGreen; wrong -> RetryRust; else -> Ink }
     OutlinedButton(
         onClick = { dispatch(GameAction.Answer(id)) },

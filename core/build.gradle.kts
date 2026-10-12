@@ -11,4 +11,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
     testImplementation("junit:junit:4.13.2")
 }
-tasks.test { testLogging { events("passed", "skipped", "failed") } }
+tasks.test {
+    // Tests read the Android bank and recordings directly. Asset edits must
+    // invalidate cached results even when Kotlin source is unchanged.
+    inputs.dir(rootProject.file("app/src/main/assets"))
+    testLogging { events("passed", "skipped", "failed") }
+}

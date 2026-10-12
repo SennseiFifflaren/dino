@@ -1,0 +1,2183 @@
+{
+  "voice": {
+    "revision": "c10ece1aade47bb51c153c893d14e5bf8e5b7117",
+    "model_path": "en/en_GB/vctk/medium/en_GB-vctk-medium.onnx",
+    "sha256": "4e9fc85ab9009385319fc6bae7f55577f8a2d7ee77fd9159a5500eb6531f41e6",
+    "size": 76952753,
+    "config_sha256": "7f85e6391ed0f7f46e4abd19345929a16be931a0c9945086f96692dce2087fa8",
+    "speaker": "p226",
+    "speaker_id": 95,
+    "length_scale": 1.08,
+    "noise_scale": 0.5,
+    "noise_w_scale": 0.65
+  },
+  "rendering": {
+    "codec": "libvorbis",
+    "quality": 2,
+    "filter": "volume=0.65,apad=pad_dur=0.22,alimiter=limit=0.75:level=false"
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "CSTR VCTK Corpus 0.92, Christophe Veaux, Junichi Yamagishi and Kirsten MacDonald, University of Edinburgh; Piper VCTK medium model by rhasspy.",
+  "clips": {
+    "shared/option_a.ogg": {
+      "text": "Option A.",
+      "spoken_text": "Option A.",
+      "sha256": "e1de1ed9dd024d739febed4c00ec004594f00e88f862790f24f9ae29396d487a",
+      "duration": 1.090748
+    },
+    "shared/option_b.ogg": {
+      "text": "Option B.",
+      "spoken_text": "Option B.",
+      "sha256": "5c58e5a13b3f20b21788e22d6303d916253b4e4ad29faac135ba857f32a69ded",
+      "duration": 1.009478
+    },
+    "shared/option_c.ogg": {
+      "text": "Option C.",
+      "spoken_text": "Option C.",
+      "sha256": "05bd270f4ef0141ca0234ca2735b8d54e8934dd099f785df6c2e1b852a3a2da6",
+      "duration": 1.137188
+    },
+    "shared/option_d.ogg": {
+      "text": "Option D.",
+      "spoken_text": "Option D.",
+      "sha256": "72c531c487613242151a188fbc07548b16ed98abd556b0061901584fe6c62f90",
+      "duration": 1.172018
+    },
+    "shared/correct.ogg": {
+      "text": "Roarsome! That is absolutely right!",
+      "spoken_text": "Roarsome! That is absolutely right!",
+      "sha256": "f1bee1e49477e74e51b359aa7de689ba955ac789fef3bb196504913dd9a44b31",
+      "duration": 2.634875
+    },
+    "shared/correct_alternate.ogg": {
+      "text": "Fantastic! You got it!",
+      "spoken_text": "Fantastic! You got it!",
+      "sha256": "4b11ccf81fc401ff50072f32932595267165314b1690bf30af4623eae5033162",
+      "duration": 1.833787
+    },
+    "shared/retry.ogg": {
+      "text": "Good try, explorer! Let us think again.",
+      "spoken_text": "Good try, explorer! Let us think again.",
+      "sha256": "0f529bfd4d7dc618564aa1e68e71d93c07f520f75b8fead5aadb6af50951b080",
+      "duration": 2.843855
+    },
+    "shared/complete.ogg": {
+      "text": "Excellent work! You have earned a new dinosaur badge!",
+      "spoken_text": "Excellent work! You have earned a new dinosaur badge!",
+      "sha256": "2dd48adbfb9c98980af6a3b1adb85e311e0f9ba7e7c8618ad39ead777e4b56b0",
+      "duration": 3.250204
+    },
+    "shared/final.ogg": {
+      "text": "You are a Dinosaur Expert! Five badges. Fifty discoveries. One roarsome explorer!",
+      "spoken_text": "You are a Dinosaur Expert! Five badges. Fifty discoveries. One roarsome explorer!",
+      "sha256": "1f57273cf439ffc1fa17d4506c2323cc10e50f87fb8d9674864ca8713ef3e197",
+      "duration": 5.32839
+    },
+    "shared/welcome.ogg": {
+      "text": "Hello, explorer! I am Professor Fossil. Ready for a prehistoric adventure?",
+      "spoken_text": "Hello, explorer! I am Professor Fossil. Ready for a prehistoric adventure?",
+      "sha256": "55c19e9396a80f3fd1d13a75cfcfb76012b085b484b171222a271b4cde745a52",
+      "duration": 4.829161
+    },
+    "l1-three-horns/question.ogg": {
+      "text": "Which dinosaur had three horns and a large bony frill?",
+      "spoken_text": "Which dinosaur had three horns and a large bony frill?",
+      "sha256": "31c01906c08f8f5abb7e12f975625dab29afd4eb271f4300974e08d1cbbe28a4",
+      "duration": 3.041224
+    },
+    "l1-three-horns/three-horns-0.ogg": {
+      "text": "Stegosaurus",
+      "spoken_text": "Stegosaurus",
+      "sha256": "bd31d5ef475a0c9d647b55f6ec3fbf95c34081e5855c2132588d4b56fd8b3262",
+      "duration": 1.230068
+    },
+    "l1-three-horns/three-horns-1.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "ae31c64032129eca4aba67a5f554973a44a01c66f87b31b3937fd3e2976f7c9a",
+      "duration": 1.253288
+    },
+    "l1-three-horns/three-horns-2.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "d4ec6f44485523f2018626005007cf81db4d046986d941202e36b004b361823a",
+      "duration": 1.113968
+    },
+    "l1-three-horns/three-horns-3.ogg": {
+      "text": "Tyrannosaurus rex",
+      "spoken_text": "Tyrannosaurus rex",
+      "sha256": "26acf77fa8515c850a4d58dafeee8e36e62b7407c52da6934689ab804dba7871",
+      "duration": 1.485488
+    },
+    "l1-three-horns/explanation.ogg": {
+      "text": "Triceratops had two long horns above its eyes, a shorter nose horn, and a bony frill behind its head.",
+      "spoken_text": "Triceratops had two long horns above its eyes, a shorter nose horn, and a bony frill behind its head.",
+      "sha256": "a93505141d97d6d0c6ea8b8a3bd2378af715950627ea24e6cac6eed3c96f1149",
+      "duration": 5.897279
+    },
+    "l1-three-horns/hint.ogg": {
+      "text": "Look for a dinosaur with a special head shape.",
+      "spoken_text": "Look for a dinosaur with a special head shape.",
+      "sha256": "12953bc0d8f3389757d81f4bac2ecc7a9043856e0b8c3fca2c912daa714c07c7",
+      "duration": 2.344626
+    },
+    "l1-rex-diet/question.ogg": {
+      "text": "What kind of food did Tyrannosaurus rex eat?",
+      "spoken_text": "What kind of food did Tyrannosaurus rex eat?",
+      "sha256": "6292228e4993c67062c93e27fd1c1e5d9d53580e4701905f07787ec35354f43a",
+      "duration": 2.507166
+    },
+    "l1-rex-diet/rex-diet-0.ogg": {
+      "text": "Leaves",
+      "spoken_text": "Leaves",
+      "sha256": "1d50d3419eec33bd5d86884bc711b8fcb7d8add2b97eb5bbe711b46ff9476a42",
+      "duration": 0.870159
+    },
+    "l1-rex-diet/rex-diet-1.ogg": {
+      "text": "Grass",
+      "spoken_text": "Grass",
+      "sha256": "deabf71cea78f9fa870551157c402edb4c3c9ad6152eeea715340ce4d95a3d6b",
+      "duration": 0.730839
+    },
+    "l1-rex-diet/rex-diet-2.ogg": {
+      "text": "Meat",
+      "spoken_text": "Meat",
+      "sha256": "a03010c001a5ba1ee5fef7213dcce9c9ebbc3afe1b6349b2b79995c1a4e4888f",
+      "duration": 0.730839
+    },
+    "l1-rex-diet/rex-diet-3.ogg": {
+      "text": "Fruit",
+      "spoken_text": "Fruit",
+      "sha256": "37e0706c36f4a3c57021c84f19cdcac6fa6d09365985e2a32f8897bb02bd6d3d",
+      "duration": 0.696009
+    },
+    "l1-rex-diet/explanation.ogg": {
+      "text": "Tyrannosaurus rex was a carnivore: a meat-eating dinosaur. Its powerful jaws and sharp teeth were suited to eating other animals.",
+      "spoken_text": "Tyrannosaurus rex was a carnivore: a meat-eating dinosaur. Its powerful jaws and sharp teeth were suited to eating other animals.",
+      "sha256": "572b3ba1f3a212fed46209acaaca3942220d9401a24ed8454a3803e162a3b977",
+      "duration": 7.069887
+    },
+    "l1-rex-diet/hint.ogg": {
+      "text": "Think about what sharp teeth can help an animal eat.",
+      "spoken_text": "Think about what sharp teeth can help an animal eat.",
+      "sha256": "e936c63ccde5c1f4f08d3e149d6f12d87fa7d96f86aad9c25e6b18d6066c8659",
+      "duration": 2.507166
+    },
+    "l1-back-plates/question.ogg": {
+      "text": "Which dinosaur had large plates along its back?",
+      "spoken_text": "Which dinosaur had large plates along its back?",
+      "sha256": "4e3e8efa464dfc517590e91c12294d8e09254dcc9143426f9448c791d36fe543",
+      "duration": 2.600045
+    },
+    "l1-back-plates/back-plates-0.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "2cd6a0a7c370a90cf62ae96eebc98ebb4da98dd11653be281004aadf82971bba",
+      "duration": 1.253288
+    },
+    "l1-back-plates/back-plates-1.ogg": {
+      "text": "Iguanodon",
+      "spoken_text": "Iguanodon",
+      "sha256": "33f690abecc6e6926b091a5a99433692bb5e586b0781d321e00aba257fa99304",
+      "duration": 1.276508
+    },
+    "l1-back-plates/back-plates-2.ogg": {
+      "text": "Brachiosaurus",
+      "spoken_text": "Brachiosaurus",
+      "sha256": "c8ffb7481019f9d5d1eaa6ae3e6c9b343ee86b939ad1cfe6032e143e93fa9b94",
+      "duration": 1.102358
+    },
+    "l1-back-plates/back-plates-3.ogg": {
+      "text": "Stegosaurus",
+      "spoken_text": "Stegosaurus",
+      "sha256": "9c209e651e11f6e047f79d173baa512ff91d6e2725cf072d1dc3f5ea24ff6607",
+      "duration": 1.183628
+    },
+    "l1-back-plates/explanation.ogg": {
+      "text": "Stegosaurus had two rows of bony plates along its back and spikes on its tail. Scientists still study what the plates were used for.",
+      "spoken_text": "Stegosaurus had two rows of bony plates along its back and spikes on its tail. Scientists still study what the plates were used for.",
+      "sha256": "8e9dd60779e9ff503b0a85d33c4761c97c9df97b018010760d1c0cb98070e1b9",
+      "duration": 7.197596
+    },
+    "l1-back-plates/hint.ogg": {
+      "text": "Think about the shapes along the dinosaur’s back.",
+      "spoken_text": "Think about the shapes along the dinosaur’s back.",
+      "sha256": "0636f8659be93b95ecd3959f98161f7e38b29dae67f6f864daa97832a753642e",
+      "duration": 2.623265
+    },
+    "l1-long-neck/question.ogg": {
+      "text": "Which of these dinosaurs had a very long neck?",
+      "spoken_text": "Which of these dinosaurs had a very long neck?",
+      "sha256": "cb62b02ef430be9dd61c3c537082314072aee8da0af9e797e067277519aab489",
+      "duration": 2.588435
+    },
+    "l1-long-neck/long-neck-0.ogg": {
+      "text": "Tyrannosaurus rex",
+      "spoken_text": "Tyrannosaurus rex",
+      "sha256": "b64721ce7913b7329275f822228002bceab72801079264e36edc6a38bc227c57",
+      "duration": 1.450658
+    },
+    "l1-long-neck/long-neck-1.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "c6a43249c7e02f1afb9ef6c7d78f00bc36b431852f7f0625d96c7b17c9c69401",
+      "duration": 1.264898
+    },
+    "l1-long-neck/long-neck-2.ogg": {
+      "text": "Brachiosaurus",
+      "spoken_text": "Brachiosaurus",
+      "sha256": "a336731afcc0dcc08726818e78778c1fef40b3c5e4dda06fda40000eb37c5b6f",
+      "duration": 1.311338
+    },
+    "l1-long-neck/long-neck-3.ogg": {
+      "text": "Ankylosaurus",
+      "spoken_text": "Ankylosaurus",
+      "sha256": "e9212862cfe05ac48c090ea81feabf27c51a7c0b5bb0be4b06bf4387b2d62339",
+      "duration": 1.230068
+    },
+    "l1-long-neck/explanation.ogg": {
+      "text": "Brachiosaurus was a long-necked, plant-eating dinosaur. Its front legs were longer than its back legs, giving its body a sloping shape.",
+      "spoken_text": "Brachiosaurus was a long-necked, plant-eating dinosaur. Its front legs were longer than its back legs, giving its body a sloping shape.",
+      "sha256": "962ceec5bf2d9a2ff1cf6ade394101367ddad82002baf0f7ecd9a87ec4f49c72",
+      "duration": 7.661995
+    },
+    "l1-long-neck/hint.ogg": {
+      "text": "Compare the body shapes of these dinosaurs.",
+      "spoken_text": "Compare the body shapes of these dinosaurs.",
+      "sha256": "8e5d331be7edba98afbc64170815d4b90b3ae56d00908096028717a9ea605028",
+      "duration": 2.681315
+    },
+    "l1-tail-club/question.ogg": {
+      "text": "Which dinosaur had a heavy bony club at the end of its tail?",
+      "spoken_text": "Which dinosaur had a heavy bony club at the end of its tail?",
+      "sha256": "a2cbc7f535a0214c31eabeac36be91d3b29b1f51c67fd1d8600f977baf9a8800",
+      "duration": 3.296644
+    },
+    "l1-tail-club/tail-club-0.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "1dd720a8ec3deed8a3dd975e375eab6f9e5b3a136de28b3633376a5d45f882f6",
+      "duration": 1.137188
+    },
+    "l1-tail-club/tail-club-1.ogg": {
+      "text": "Ankylosaurus",
+      "spoken_text": "Ankylosaurus",
+      "sha256": "acd92f9225c1faec2fdee5b3f5b5e0b5e70981bac26764859924b69c820e6717",
+      "duration": 1.183628
+    },
+    "l1-tail-club/tail-club-2.ogg": {
+      "text": "Iguanodon",
+      "spoken_text": "Iguanodon",
+      "sha256": "171b4f5515a92e72b1b991ae63de9102bc4325187a95cde91e08c314f51ee033",
+      "duration": 1.195238
+    },
+    "l1-tail-club/tail-club-3.ogg": {
+      "text": "Spinosaurus",
+      "spoken_text": "Spinosaurus",
+      "sha256": "a6eb765fd861c0271182a31d7cab9d88c3250dd4c5a2fb3da17f08e2f4b89334",
+      "duration": 1.160408
+    },
+    "l1-tail-club/explanation.ogg": {
+      "text": "Ankylosaurus had armour on its body and a bony tail club. The club could be used for defence.",
+      "spoken_text": "Ankylosaurus had armour on its body and a bony tail club. The club could be used for defence.",
+      "sha256": "11e3e5b9f3cd5d75198e1d56c6f45c41004837e251e9fb4be02f926cc6de76aa",
+      "duration": 5.955329
+    },
+    "l1-tail-club/hint.ogg": {
+      "text": "Look for a dinosaur with body armour.",
+      "spoken_text": "Look for a dinosaur with body armour.",
+      "sha256": "f98fadcfee11d7fa725cd6101515ae841fcf960d7ecc038603d8a8bef565365c",
+      "duration": 2.333016
+    },
+    "l1-plant-eater/question.ogg": {
+      "text": "What did Diplodocus eat?",
+      "spoken_text": "What did Diplodocus eat?",
+      "sha256": "a1b7b66247cdbfc87c9349812fb9a246b684e1140bc8a6c778e5ddc0b1f7a886",
+      "duration": 1.648027
+    },
+    "l1-plant-eater/plant-eater-0.ogg": {
+      "text": "Fish",
+      "spoken_text": "Fish",
+      "sha256": "6738e984c4cb7d759b3c04c17a83cd879d8a2193ff93b63851b16cd53f8ab49c",
+      "duration": 0.591519
+    },
+    "l1-plant-eater/plant-eater-1.ogg": {
+      "text": "Insects",
+      "spoken_text": "Insects",
+      "sha256": "fe6b98b442ca886ee205fab5440b45316a49b7701fae17c9652e76dc39c1cf68",
+      "duration": 0.928209
+    },
+    "l1-plant-eater/plant-eater-2.ogg": {
+      "text": "Other dinosaurs",
+      "spoken_text": "Other dinosaurs",
+      "sha256": "8674769c8584908a664c4550b7cb98ed1d0b0f2b63bfdc57e1add81033429f4e",
+      "duration": 1.380998
+    },
+    "l1-plant-eater/plant-eater-3.ogg": {
+      "text": "Plants",
+      "spoken_text": "Plants",
+      "sha256": "2619bf7abfc830cd37f2c30b207519074d2027d768c8568a877fa0829fdcb568",
+      "duration": 0.881769
+    },
+    "l1-plant-eater/explanation.ogg": {
+      "text": "Diplodocus was a herbivore, which means a plant eater. It had a long neck, a long tail, and peg-like teeth.",
+      "spoken_text": "Diplodocus was a herbivore, which means a plant eater. It had a long neck, a long tail, and peg-like teeth.",
+      "sha256": "32c02337bceca0227ce60b41e1778383a8a2fefd792423a223a67c54b5124a56",
+      "duration": 6.640317
+    },
+    "l1-plant-eater/hint.ogg": {
+      "text": "Its teeth helped it gather food, rather than tear meat.",
+      "spoken_text": "Its teeth helped it gather food, rather than tear meat.",
+      "sha256": "63835dc58d7f27093ae53097dc7db7493d04574b3a527cf4afda1632c3db2411",
+      "duration": 3.285034
+    },
+    "l1-sail-back/question.ogg": {
+      "text": "Which dinosaur had tall back spines that formed a sail-like shape?",
+      "spoken_text": "Which dinosaur had tall back spines that formed a sail-like shape?",
+      "sha256": "dadd827627d550c337bf666ee96ea5f596fb78cc6e02742f394c63122a5b4001",
+      "duration": 3.389524
+    },
+    "l1-sail-back/sail-back-0.ogg": {
+      "text": "Spinosaurus",
+      "spoken_text": "Spinosaurus",
+      "sha256": "75f4c3cb61a4737260041ea54102d4cdc3d70854313cc9509d9841c6d5ce4466",
+      "duration": 1.148798
+    },
+    "l1-sail-back/sail-back-1.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "2ed86e0f531d495014257a2f616e33423ef7fd15a3c778a99b0464c3f74f8ddf",
+      "duration": 1.183628
+    },
+    "l1-sail-back/sail-back-2.ogg": {
+      "text": "Ankylosaurus",
+      "spoken_text": "Ankylosaurus",
+      "sha256": "25aa3bb8551717f5f6483c5134969a985bfc516a284ba808cd1f5b1103dd3400",
+      "duration": 1.160408
+    },
+    "l1-sail-back/sail-back-3.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "478709daa7c931409f97964ad7c0136741e289a5e7b6ce93adc08b66bb7b62fa",
+      "duration": 1.125578
+    },
+    "l1-sail-back/explanation.ogg": {
+      "text": "Spinosaurus had tall spines on its back that formed a sail-like shape. Scientists are still investigating how it used this feature.",
+      "spoken_text": "Spinosaurus had tall spines on its back that formed a sail-like shape. Scientists are still investigating how it used this feature.",
+      "sha256": "470dca335d198ea7a68092cb70bd2c67683de0403011a2547c216e9817f3caca",
+      "duration": 6.744807
+    },
+    "l1-sail-back/hint.ogg": {
+      "text": "Think about a dinosaur with an unusual outline.",
+      "spoken_text": "Think about a dinosaur with an unusual outline.",
+      "sha256": "44b192059760406b0e631a33be940ff0ddf85ddd6f9da7c50e18337433d05d60",
+      "duration": 2.646485
+    },
+    "l1-thumb-spike/question.ogg": {
+      "text": "Which dinosaur had a pointed spike on each thumb?",
+      "spoken_text": "Which dinosaur had a pointed spike on each thumb?",
+      "sha256": "4a25f4ba5beaf1df9208aa316869a6dda1e334df655ea3126ce6921bea90dc94",
+      "duration": 2.809025
+    },
+    "l1-thumb-spike/thumb-spike-0.ogg": {
+      "text": "Stegosaurus",
+      "spoken_text": "Stegosaurus",
+      "sha256": "29cb3fa68276b417facc0525dd47c495da25035ed1618efb7b35a4ef0af47838",
+      "duration": 1.218458
+    },
+    "l1-thumb-spike/thumb-spike-1.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "90d80510909e7702ce33849b315f3b4d64f34b408cb219427f75c2d73183cfb8",
+      "duration": 1.090748
+    },
+    "l1-thumb-spike/thumb-spike-2.ogg": {
+      "text": "Iguanodon",
+      "spoken_text": "Iguanodon",
+      "sha256": "d14022f26d57054c5e5504e7c6f94b261aa58ee03c8b3e584b1e15bd316578ab",
+      "duration": 1.125578
+    },
+    "l1-thumb-spike/thumb-spike-3.ogg": {
+      "text": "Tyrannosaurus rex",
+      "spoken_text": "Tyrannosaurus rex",
+      "sha256": "09abdc5ad649ae134a6fe8184beb8bde3a52e2be69f54a406bf18f2f6b117213",
+      "duration": 1.462268
+    },
+    "l1-thumb-spike/explanation.ogg": {
+      "text": "Iguanodon had a large spike on each thumb. It was a plant-eating dinosaur with hands that were very different from ours.",
+      "spoken_text": "Iguanodon had a large spike on each thumb. It was a plant-eating dinosaur with hands that were very different from ours.",
+      "sha256": "13e89ecf55b6c79b505573e6cb957a1f488228d2f8fab066880577629e96e9e4",
+      "duration": 6.094649
+    },
+    "l1-thumb-spike/hint.ogg": {
+      "text": "Think about a feature on a dinosaur’s hand.",
+      "spoken_text": "Think about a feature on a dinosaur’s hand.",
+      "sha256": "d4698ff63d3c8fa5f84fa54564d320a96f2b8411e3365bb31c704edbb524a4b6",
+      "duration": 2.472336
+    },
+    "l1-rex-legs/question.ogg": {
+      "text": "How many legs did Tyrannosaurus rex walk on?",
+      "spoken_text": "How many legs did Tyrannosaurus rex walk on?",
+      "sha256": "01f76af9c6070dad7d4bb4a92dcce1782a87d5a910615c5b4f10b217bbd3aef6",
+      "duration": 2.704535
+    },
+    "l1-rex-legs/rex-legs-0.ogg": {
+      "text": "Two",
+      "spoken_text": "Two",
+      "sha256": "8d6b76f46f555cbde8b84579e57ed75735a3b9e559aed29e744e7e8a13e17e95",
+      "duration": 0.672789
+    },
+    "l1-rex-legs/rex-legs-1.ogg": {
+      "text": "Four",
+      "spoken_text": "Four",
+      "sha256": "04b57d7feb71de1b3f88f447e62f8d7e8901fb4c5a0caef937c643ef41fdb856",
+      "duration": 0.661179
+    },
+    "l1-rex-legs/rex-legs-2.ogg": {
+      "text": "Six",
+      "spoken_text": "Six",
+      "sha256": "99b6f8651672d53de71d60426a7dc1d22b89ba463d814b0cb7cc41817652584a",
+      "duration": 0.719229
+    },
+    "l1-rex-legs/rex-legs-3.ogg": {
+      "text": "Eight",
+      "spoken_text": "Eight",
+      "sha256": "5a79edea0b2e9edf07154ae97cd38a2d6ea049bd8d3f95c8e998f8401fce9c66",
+      "duration": 0.661179
+    },
+    "l1-rex-legs/explanation.ogg": {
+      "text": "Tyrannosaurus rex walked on its two powerful back legs. Its arms were much smaller than its legs.",
+      "spoken_text": "Tyrannosaurus rex walked on its two powerful back legs. Its arms were much smaller than its legs.",
+      "sha256": "3d59d79d901f26df4a2ff0795d9641957b4c9613ea29e471054b89342c13ad21",
+      "duration": 5.50254
+    },
+    "l1-rex-legs/hint.ogg": {
+      "text": "Compare its arms with its back legs.",
+      "spoken_text": "Compare its arms with its back legs.",
+      "sha256": "ef0063d03381bb0a06ab39bee88737fa0b1d9f2ecefcd0ec6fa68bb75d55902e",
+      "duration": 2.100816
+    },
+    "l1-triceratops-diet/question.ogg": {
+      "text": "Which food would suit a plant-eating Triceratops?",
+      "spoken_text": "Which food would suit a plant-eating Triceratops?",
+      "sha256": "01812aeed5167802036902a755c63349c8f56eb192df98a0c0ce0f3d2e44ce99",
+      "duration": 2.936735
+    },
+    "l1-triceratops-diet/triceratops-diet-0.ogg": {
+      "text": "Fish",
+      "spoken_text": "Fish",
+      "sha256": "36aa524c1c3a73762125d1590c40f87d5ac5535bb9c986796fa3c1bc422bbf40",
+      "duration": 0.696009
+    },
+    "l1-triceratops-diet/triceratops-diet-1.ogg": {
+      "text": "Other dinosaurs",
+      "spoken_text": "Other dinosaurs",
+      "sha256": "e55e2630e71adaa67b30d2a9439f623b452cdd54b696887194d578eb60869f74",
+      "duration": 1.380998
+    },
+    "l1-triceratops-diet/triceratops-diet-2.ogg": {
+      "text": "Insects",
+      "spoken_text": "Insects",
+      "sha256": "c0ea28bee9d6c1078fc62b9897657f3419365f9079a5f53a5fb7fd6db8563b8c",
+      "duration": 0.928209
+    },
+    "l1-triceratops-diet/triceratops-diet-3.ogg": {
+      "text": "Leaves",
+      "spoken_text": "Leaves",
+      "sha256": "ad6cb4a111ca56d80f8d636961223e58ab31e1783aeb0fb2c3767699d6fea1ba",
+      "duration": 0.800499
+    },
+    "l1-triceratops-diet/explanation.ogg": {
+      "text": "Triceratops was a herbivore. Its beak and teeth helped it eat plants, even though it had impressive horns.",
+      "spoken_text": "Triceratops was a herbivore. Its beak and teeth helped it eat plants, even though it had impressive horns.",
+      "sha256": "e62155ae4ac5443259ce6621d8d3ac5a14e37bebbb1ab5796c27a8dc94aa3d31",
+      "duration": 6.013379
+    },
+    "l1-triceratops-diet/hint.ogg": {
+      "text": "Horns do not tell us what an animal eats.",
+      "spoken_text": "Horns do not tell us what an animal eats.",
+      "sha256": "f18d3124364747858d63b3347e7edccc7736f6dc1bc54b103cb7be582595a74d",
+      "duration": 2.321406
+    },
+    "l2-herbivore/question.ogg": {
+      "text": "What does the word herbivore mean?",
+      "spoken_text": "What does the word herbivore mean?",
+      "sha256": "8871d054dc0d8cf17487963404533c7277fe62f8f56e0c765a603d019e9abeb9",
+      "duration": 2.019546
+    },
+    "l2-herbivore/l2-herbivore-0.ogg": {
+      "text": "A plant eater",
+      "spoken_text": "A plant eater",
+      "sha256": "62b4aba6f7422b13bf7cf1be014e2607152ec8d0c08e1e551e55126bc05b8b4b",
+      "duration": 1.357778
+    },
+    "l2-herbivore/l2-herbivore-1.ogg": {
+      "text": "A meat eater",
+      "spoken_text": "A meat eater",
+      "sha256": "770bab9beda5aea5c45492ecc8f052dca934339c656959d198cc670d189c2a26",
+      "duration": 1.090748
+    },
+    "l2-herbivore/l2-herbivore-2.ogg": {
+      "text": "An animal that eats only rocks",
+      "spoken_text": "An animal that eats only rocks",
+      "sha256": "35beeac84e0ea6831a17340d26697d08c8ff4f0a3e95742ea9a86266c44c1cb1",
+      "duration": 1.961497
+    },
+    "l2-herbivore/l2-herbivore-3.ogg": {
+      "text": "An animal that never eats",
+      "spoken_text": "An animal that never eats",
+      "sha256": "23c9919f712a17d604db2f04bb75c0638d1cae53662ed89ce2f26d5c8fee6634",
+      "duration": 1.798957
+    },
+    "l2-herbivore/explanation.ogg": {
+      "text": "A herbivore eats plants. Dinosaurs such as Diplodocus and Triceratops were herbivores.",
+      "spoken_text": "A herbivore eats plants. Dinosaurs such as Diplodocus and Triceratops were herbivores.",
+      "sha256": "fb83ddc6ca7035f87249bfae6af9b58a7d547bde642afbb20bcee72ccd7f0eb1",
+      "duration": 5.17746
+    },
+    "l2-herbivore/hint.ogg": {
+      "text": "Think about how scientists group animals by their food.",
+      "spoken_text": "Think about how scientists group animals by their food.",
+      "sha256": "112f43a67aba031d93f8f2473f5a24422480a54d7f9b09f7a59bebbe803cb2f8",
+      "duration": 2.936735
+    },
+    "l2-carnivore/question.ogg": {
+      "text": "Which feature helped Tyrannosaurus rex tear meat?",
+      "spoken_text": "Which feature helped Tyrannosaurus rex tear meat?",
+      "sha256": "18fbba69416cf54da1077de2cf3e99efa1228a7b19b500f1e8bd3aa2d52d9dc7",
+      "duration": 2.855465
+    },
+    "l2-carnivore/l2-carnivore-0.ogg": {
+      "text": "Flat grinding teeth",
+      "spoken_text": "Flat grinding teeth",
+      "sha256": "aedef607d0f0543a12d28f99d19207a6a6f8a04438deb9b86f6abd71971b3aaf",
+      "duration": 1.230068
+    },
+    "l2-carnivore/l2-carnivore-1.ogg": {
+      "text": "A toothless beak",
+      "spoken_text": "A toothless beak",
+      "sha256": "98235322720d960a3ac6b33e9fe6c1ca2603f4bce36414a88ec15e61d695fb51",
+      "duration": 1.264898
+    },
+    "l2-carnivore/l2-carnivore-2.ogg": {
+      "text": "Sharp teeth",
+      "spoken_text": "Sharp teeth",
+      "sha256": "39d169da72c3ce4cfa90d4a1f5a36faa38caee394f1fdd62664d427915685182",
+      "duration": 1.009478
+    },
+    "l2-carnivore/l2-carnivore-3.ogg": {
+      "text": "A long trunk",
+      "spoken_text": "A long trunk",
+      "sha256": "b97f9f670c62547062a9b2ae782749ee3fb94725fd122e6dd1908c812136050c",
+      "duration": 1.021088
+    },
+    "l2-carnivore/explanation.ogg": {
+      "text": "Tyrannosaurus rex had large, sharp teeth and powerful jaws suited to feeding on other animals.",
+      "spoken_text": "Tyrannosaurus rex had large, sharp teeth and powerful jaws suited to feeding on other animals.",
+      "sha256": "dfe5fa3c6edf48f5b6d1af201987c803081b802baed4535c1ab14aff39eb680e",
+      "duration": 5.35161
+    },
+    "l2-carnivore/hint.ogg": {
+      "text": "Think about the shape that helps cut tough food.",
+      "spoken_text": "Think about the shape that helps cut tough food.",
+      "sha256": "d7c9a56f29b52e4dbb4a55baa0cbe42d1d039cffa1fd82f43632bcb27bc5cd69",
+      "duration": 2.623265
+    },
+    "l2-tail-defence/question.ogg": {
+      "text": "Where were the long defensive spikes of Stegosaurus?",
+      "spoken_text": "Where were the long defensive spikes of Stegosaurus?",
+      "sha256": "426f9000e89952739dc054ef4b648f870e6d003d698b7c6a569aebbd77971048",
+      "duration": 2.785805
+    },
+    "l2-tail-defence/l2-tail-defence-0.ogg": {
+      "text": "On its nose",
+      "spoken_text": "On its nose",
+      "sha256": "d75a2b2efee6632abd8da28048b5f8f91f7f886340553b9a4987b884bfd38091",
+      "duration": 1.113968
+    },
+    "l2-tail-defence/l2-tail-defence-1.ogg": {
+      "text": "On its tail",
+      "spoken_text": "On its tail",
+      "sha256": "ac732cff2974157629a94eb9bd46a66ac5408fe85f066dc221d0559bdc97cf91",
+      "duration": 1.125578
+    },
+    "l2-tail-defence/l2-tail-defence-2.ogg": {
+      "text": "On its feet",
+      "spoken_text": "On its feet",
+      "sha256": "59a753f93939d1a1d0bb4de5d70d1a5c37f4170fd8c5121c9639ba8bcff883b8",
+      "duration": 1.137188
+    },
+    "l2-tail-defence/l2-tail-defence-3.ogg": {
+      "text": "Inside its mouth",
+      "spoken_text": "Inside its mouth",
+      "sha256": "f1f1e030ebaf94c47ca25c4bef9b42243dd50ce674c890a57e39aec4ffd98c5b",
+      "duration": 1.346168
+    },
+    "l2-tail-defence/explanation.ogg": {
+      "text": "Stegosaurus had long spikes on its tail. These could help it defend itself against an attacker.",
+      "spoken_text": "Stegosaurus had long spikes on its tail. These could help it defend itself against an attacker.",
+      "sha256": "3a5e2d5c0de559efcc64b6c0ace1dc61290da5b3fc8920fea6ebbf9ff06f40a4",
+      "duration": 5.38644
+    },
+    "l2-tail-defence/hint.ogg": {
+      "text": "Its back plates and its spikes were different structures.",
+      "spoken_text": "Its back plates and its spikes were different structures.",
+      "sha256": "d3d70cfdff578cc1574532fba3caaa04966b5e9f36653b1ac3a56355f33995a0",
+      "duration": 2.971565
+    },
+    "l2-body-armour/question.ogg": {
+      "text": "Which dinosaur was protected by bony body armour?",
+      "spoken_text": "Which dinosaur was protected by bony body armour?",
+      "sha256": "582c4ddffa60a0f9148f656b087bc374bc24227d8eb6f7b557883a1596eea904",
+      "duration": 3.180544
+    },
+    "l2-body-armour/l2-body-armour-0.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "c52ef966eb5fd6aafaf3146242cde748658dabbc19ae1b537f6a36e5e334614e",
+      "duration": 1.218458
+    },
+    "l2-body-armour/l2-body-armour-1.ogg": {
+      "text": "Brachiosaurus",
+      "spoken_text": "Brachiosaurus",
+      "sha256": "2bfd917e16eb175f5dd6a383dd7ec8b957c78c9231a9fd3c227434b9bf0a8826",
+      "duration": 1.230068
+    },
+    "l2-body-armour/l2-body-armour-2.ogg": {
+      "text": "Tyrannosaurus rex",
+      "spoken_text": "Tyrannosaurus rex",
+      "sha256": "79df77aafa220f8dedb295e64f59095a5c3e6fefbfebb52a9edd7f063c38ae6e",
+      "duration": 1.601587
+    },
+    "l2-body-armour/l2-body-armour-3.ogg": {
+      "text": "Ankylosaurus",
+      "spoken_text": "Ankylosaurus",
+      "sha256": "5558d60207de7c85ff07a59a4181d28a019210af130e80b1cfa953ef6826ae4d",
+      "duration": 1.113968
+    },
+    "l2-body-armour/explanation.ogg": {
+      "text": "Ankylosaurus had bony armour covering much of its body, as well as a tail club.",
+      "spoken_text": "Ankylosaurus had bony armour covering much of its body, as well as a tail club.",
+      "sha256": "b302bc246e227baee986c3cd307865d0b0be358b830954c38ee589805c8611d8",
+      "duration": 4.666621
+    },
+    "l2-body-armour/hint.ogg": {
+      "text": "Compare the outer covering of these animals.",
+      "spoken_text": "Compare the outer covering of these animals.",
+      "sha256": "88f29acb988b0e6ae9332cc74c131ef7ce98f786721a7da261e3fc04a8bda422",
+      "duration": 2.588435
+    },
+    "l2-taller-front/question.ogg": {
+      "text": "Which dinosaur had front legs longer than its back legs?",
+      "spoken_text": "Which dinosaur had front legs longer than its back legs?",
+      "sha256": "804e4920ea344b8189fa4aaeb7c31f57f47e0cc865e6ba518812b973a1f8473e",
+      "duration": 3.331474
+    },
+    "l2-taller-front/l2-taller-front-0.ogg": {
+      "text": "Brachiosaurus",
+      "spoken_text": "Brachiosaurus",
+      "sha256": "d20775379daf41346659aa9bae8320553bdf0978b13c63ffb73946f71b1a6f24",
+      "duration": 1.299728
+    },
+    "l2-taller-front/l2-taller-front-1.ogg": {
+      "text": "Stegosaurus",
+      "spoken_text": "Stegosaurus",
+      "sha256": "48be9cc4a30bd79ab307a08374df02a8d3d9e37f5dbbc429f7c4cc6bc68a3bd2",
+      "duration": 1.218458
+    },
+    "l2-taller-front/l2-taller-front-2.ogg": {
+      "text": "Tyrannosaurus rex",
+      "spoken_text": "Tyrannosaurus rex",
+      "sha256": "e561db23a3f3ee15982b15bae4ede772f1192c9b6d6dfbc94afe2b00cb9ae393",
+      "duration": 1.543537
+    },
+    "l2-taller-front/l2-taller-front-3.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "10262e631348550545225c2f2323b9a8253aadef74524772cb093e5a7769f2a0",
+      "duration": 1.230068
+    },
+    "l2-taller-front/explanation.ogg": {
+      "text": "Brachiosaurus had unusually long front legs. Its body sloped up towards its shoulders and long neck.",
+      "spoken_text": "Brachiosaurus had unusually long front legs. Its body sloped up towards its shoulders and long neck.",
+      "sha256": "d163a23ef39c661499b84897504ee33ae5c8431d3098eef36e46ad5cea8dfef5",
+      "duration": 5.44449
+    },
+    "l2-taller-front/hint.ogg": {
+      "text": "Picture how each animal stood.",
+      "spoken_text": "Picture how each animal stood.",
+      "sha256": "252bdf38366abf6136cf43176b36a780f05449fbe511028b611ba8f08d9cafc6",
+      "duration": 1.787347
+    },
+    "l2-fish-food/question.ogg": {
+      "text": "Fish were part of the diet of which dinosaur?",
+      "spoken_text": "Fish were part of the diet of which dinosaur?",
+      "sha256": "ff709284da66b6e005c430f0d35bc3b6e0862934388b8181afc03ea1d5ad56b3",
+      "duration": 2.460726
+    },
+    "l2-fish-food/l2-fish-food-0.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "5f96982081979c6727cc74c9a57cf2465a728e44be675a0504b190f35c019450",
+      "duration": 1.137188
+    },
+    "l2-fish-food/l2-fish-food-1.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "2a16d7b5a140a54ca890faa3fb30f752dd6c060137c422b36308e7dec8ddbdfd",
+      "duration": 1.183628
+    },
+    "l2-fish-food/l2-fish-food-2.ogg": {
+      "text": "Spinosaurus",
+      "spoken_text": "Spinosaurus",
+      "sha256": "d830d3b1b4d7a5adfdbeec905afbff2992b7bb464f289141f23eed6c57ae5168",
+      "duration": 1.218458
+    },
+    "l2-fish-food/l2-fish-food-3.ogg": {
+      "text": "Stegosaurus",
+      "spoken_text": "Stegosaurus",
+      "sha256": "c422e7c0175b9257c0f911b96ad7e043dcf3d8e5eb41e797cc447bc54d2e8059",
+      "duration": 1.264898
+    },
+    "l2-fish-food/explanation.ogg": {
+      "text": "Spinosaurus had a long snout and cone-shaped teeth. Fossil evidence supports fish as part of its diet.",
+      "spoken_text": "Spinosaurus had a long snout and cone-shaped teeth. Fossil evidence supports fish as part of its diet.",
+      "sha256": "aeb2d8c1c449c5d3c0676896312f4321720d09e774e36bd522fa7d520dc98703",
+      "duration": 5.36322
+    },
+    "l2-fish-food/hint.ogg": {
+      "text": "Think about teeth that could help grip slippery food.",
+      "spoken_text": "Think about teeth that could help grip slippery food.",
+      "sha256": "48b783fc6089095a3f42b72b6829acc78978a24b7b2564b71bf49a1ada09428d",
+      "duration": 2.634875
+    },
+    "l2-dino-eggs/question.ogg": {
+      "text": "How did dinosaurs produce their young?",
+      "spoken_text": "How did dinosaurs produce their young?",
+      "sha256": "7226ac33a3200a3e5df6a8295ddd39ea0a37ad02718721f7f813be4e7d0827f1",
+      "duration": 2.158866
+    },
+    "l2-dino-eggs/l2-dino-eggs-0.ogg": {
+      "text": "By splitting in two",
+      "spoken_text": "By splitting in two",
+      "sha256": "42f455801dbf888d3b7e21cf91d94ce3a5b3f918341a55acd1084213dc82d0ce",
+      "duration": 1.485488
+    },
+    "l2-dino-eggs/l2-dino-eggs-1.ogg": {
+      "text": "By laying eggs",
+      "spoken_text": "By laying eggs",
+      "sha256": "cd1145427736ab78f0f02f67e952e38901d5eae664008a1da3db272226ee8b68",
+      "duration": 1.148798
+    },
+    "l2-dino-eggs/l2-dino-eggs-2.ogg": {
+      "text": "By growing seeds",
+      "spoken_text": "By growing seeds",
+      "sha256": "206268bf94d623d0152dfd02ee159adf38dcec367edac7db3cd85199fb6f3308",
+      "duration": 1.322948
+    },
+    "l2-dino-eggs/l2-dino-eggs-3.ogg": {
+      "text": "By making cocoons",
+      "spoken_text": "By making cocoons",
+      "sha256": "994dbb1d655ccf71596244bb049c250014e6d78e6f31c99cc7ebf96b55321073",
+      "duration": 1.497098
+    },
+    "l2-dino-eggs/explanation.ogg": {
+      "text": "Dinosaurs laid eggs. Fossil eggs and nests provide evidence of this, and their living relatives, birds, also lay eggs.",
+      "spoken_text": "Dinosaurs laid eggs. Fossil eggs and nests provide evidence of this, and their living relatives, birds, also lay eggs.",
+      "sha256": "2620078f05ba1f5d1f43a767aa28c0602f9d8cc6b9be836d4e8ccd240ddfa7d0",
+      "duration": 7.267256
+    },
+    "l2-dino-eggs/hint.ogg": {
+      "text": "Think about how birds and other reptiles reproduce.",
+      "spoken_text": "Think about how birds and other reptiles reproduce.",
+      "sha256": "697b17731789a4db4c91d851f5f8fdd3e7334274b1239bb42a9f93688596127d",
+      "duration": 2.669705
+    },
+    "l2-under-body/question.ogg": {
+      "text": "How were the back legs of dinosaurs generally positioned?",
+      "spoken_text": "How were the back legs of dinosaurs generally positioned?",
+      "sha256": "545ccaa189e8ab362175ccb984eb36970f1c2aa3b01f4c9f558e3e994971c096",
+      "duration": 3.122494
+    },
+    "l2-under-body/l2-under-body-0.ogg": {
+      "text": "Spread sideways like a sprawling lizard",
+      "spoken_text": "Spread sideways like a sprawling lizard",
+      "sha256": "d11d822a489b7caa9c7f4e5ea30f2a3e381ea1d3a7fe4325e329714739916cd5",
+      "duration": 2.356236
+    },
+    "l2-under-body/l2-under-body-1.ogg": {
+      "text": "Growing from the head",
+      "spoken_text": "Growing from the head",
+      "sha256": "342d0580bb6faf92e47453a8885185c2f927908a3cc731819baa3e769ca6553d",
+      "duration": 1.137188
+    },
+    "l2-under-body/l2-under-body-2.ogg": {
+      "text": "Above the back",
+      "spoken_text": "Above the back",
+      "sha256": "87d06ed4ac171d700fa7066cba55615008c4e2c79e71e2871e5f49aa72991db1",
+      "duration": 1.021088
+    },
+    "l2-under-body/l2-under-body-3.ogg": {
+      "text": "Underneath the body",
+      "spoken_text": "Underneath the body",
+      "sha256": "a7eda925e6408cf4973775e6af0a70842858e78214d7e011dd1b83942f618eb9",
+      "duration": 1.427438
+    },
+    "l2-under-body/explanation.ogg": {
+      "text": "Dinosaurs generally stood with their back legs under their bodies. This upright stance distinguishes them from sprawling reptiles.",
+      "spoken_text": "Dinosaurs generally stood with their back legs under their bodies. This upright stance distinguishes them from sprawling reptiles.",
+      "sha256": "3d278289c3d10f280cf2ca3eaed97fcfd5f329abea10eb466ba4a57108e3d5fb",
+      "duration": 6.733197
+    },
+    "l2-under-body/hint.ogg": {
+      "text": "Think about how an animal supports its weight.",
+      "spoken_text": "Think about how an animal supports its weight.",
+      "sha256": "2a65b8c7419777faa8a6510b9af73d6158d013e05294846b8eb72d0dc26bc9d3",
+      "duration": 2.437506
+    },
+    "l2-flying-reptiles/question.ogg": {
+      "text": "Which group were flying reptiles rather than dinosaurs?",
+      "spoken_text": "Which group were flying reptiles rather than dinosaurs?",
+      "sha256": "670bcf1f89332c85a1e5fd16b6b3cc59f07c1ee5fe0ac312372eaff3886cf566",
+      "duration": 3.110884
+    },
+    "l2-flying-reptiles/l2-flying-reptiles-0.ogg": {
+      "text": "Pterosaurs",
+      "spoken_text": "Pterosaurs",
+      "sha256": "bf2dcc0f2ef86c45704215864a7e881f553e7925248c24cb3251b9071e49122c",
+      "duration": 1.032698
+    },
+    "l2-flying-reptiles/l2-flying-reptiles-1.ogg": {
+      "text": "Sauropods",
+      "spoken_text": "Sauropods",
+      "sha256": "eeda3cb9ef71787da46d09ddf93fbdb5ec717b5fb93b9e64250f69c1bc1f6ea6",
+      "duration": 1.102358
+    },
+    "l2-flying-reptiles/l2-flying-reptiles-2.ogg": {
+      "text": "Ceratopsians",
+      "spoken_text": "Ceratopsians",
+      "sha256": "357dfe52b5e20d143783c6beb7b290dfa5477e428933bff20275bef9795abbaf",
+      "duration": 1.299728
+    },
+    "l2-flying-reptiles/l2-flying-reptiles-3.ogg": {
+      "text": "Stegosaurs",
+      "spoken_text": "Stegosaurs",
+      "sha256": "29743f7475e34f0ccdde082dc1adf547d6baf361007402c5b85b67d2f7ceee46",
+      "duration": 1.102358
+    },
+    "l2-flying-reptiles/explanation.ogg": {
+      "text": "Pterosaurs were flying reptiles related to dinosaurs, but they were a separate group. Birds, in contrast, are dinosaurs.",
+      "spoken_text": "Pterosaurs were flying reptiles related to dinosaurs, but they were a separate group. Birds, in contrast, are dinosaurs.",
+      "sha256": "0dc2b342f3a7306a1d9f4bb70178cab91deb6c2340f3758a1839bf8d18dd0931",
+      "duration": 6.675147
+    },
+    "l2-flying-reptiles/hint.ogg": {
+      "text": "Not every prehistoric reptile belongs to the same group.",
+      "spoken_text": "Not every prehistoric reptile belongs to the same group.",
+      "sha256": "dcfd6e24e50c36deb5246486d5a50e00e39b3342505ce2c8b98f87ee15a48dba",
+      "duration": 3.238594
+    },
+    "l2-beak-food/question.ogg": {
+      "text": "What did Triceratops use its beak and teeth to eat?",
+      "spoken_text": "What did Triceratops use its beak and teeth to eat?",
+      "sha256": "df24a1ce1ed0fc6712b538c92d0127bb8f695277f21f620857804b359a350612",
+      "duration": 2.727755
+    },
+    "l2-beak-food/l2-beak-food-0.ogg": {
+      "text": "Other dinosaurs",
+      "spoken_text": "Other dinosaurs",
+      "sha256": "9ea6ea3dfdb64af17727b20baed3920bbad2cd65c17196e557bd5ea111a05fdc",
+      "duration": 1.311338
+    },
+    "l2-beak-food/l2-beak-food-1.ogg": {
+      "text": "Shellfish",
+      "spoken_text": "Shellfish",
+      "sha256": "6084b9d3088fa59da405afa04f8067ac847a306158c60252ca14529923a2ae30",
+      "duration": 0.963039
+    },
+    "l2-beak-food/l2-beak-food-2.ogg": {
+      "text": "Plants",
+      "spoken_text": "Plants",
+      "sha256": "0b949fca8671a82ba69b4695d452dc6a1b99600e5d07075fa4c013ac9f096b5e",
+      "duration": 0.916599
+    },
+    "l2-beak-food/l2-beak-food-3.ogg": {
+      "text": "Only eggs",
+      "spoken_text": "Only eggs",
+      "sha256": "be0bf66d202ad58b637b20562c4248d52f45cc9f436187127a15bd83019cee77",
+      "duration": 1.125578
+    },
+    "l2-beak-food/explanation.ogg": {
+      "text": "Triceratops used its beak and teeth to eat plants. Its horns do not mean that it was a meat eater.",
+      "spoken_text": "Triceratops used its beak and teeth to eat plants. Its horns do not mean that it was a meat eater.",
+      "sha256": "74e8388487f8b5a89799c3acb582546abd931664b8ad6d184d0c496ca0e962c6",
+      "duration": 5.11941
+    },
+    "l2-beak-food/hint.ogg": {
+      "text": "An impressive head can have more than one job.",
+      "spoken_text": "An impressive head can have more than one job.",
+      "sha256": "6dc9c92381dcb1438792f7804c057f4ab80dc29613612ba6d2c62e5676aa4dbc",
+      "duration": 2.565215
+    },
+    "l3-first-period/question.ogg": {
+      "text": "In which period did dinosaurs first appear?",
+      "spoken_text": "In which period did dinosaurs first appear?",
+      "sha256": "82acb4af00cd007ad0959bd83359cc32f50559f736145ff213bd3a6d0126bae2",
+      "duration": 2.588435
+    },
+    "l3-first-period/l3-first-period-0.ogg": {
+      "text": "Jurassic",
+      "spoken_text": "Jurassic",
+      "sha256": "68b7586c0a3006ee9508942b3d865480ed72d5e8e70190b48d096eebf31803c3",
+      "duration": 0.963039
+    },
+    "l3-first-period/l3-first-period-1.ogg": {
+      "text": "Triassic",
+      "spoken_text": "Triassic",
+      "sha256": "156bf09f67e8f247e7fa68a64676ec78bf8736ae4c69c3713332084662d7331e",
+      "duration": 0.997868
+    },
+    "l3-first-period/l3-first-period-2.ogg": {
+      "text": "Cretaceous",
+      "spoken_text": "Cretaceous",
+      "sha256": "33f0760b8560e69348d14f3596993c08d9dae0f50c57ba6e4b552803a74ade2b",
+      "duration": 1.067528
+    },
+    "l3-first-period/l3-first-period-3.ogg": {
+      "text": "Quaternary",
+      "spoken_text": "Quaternary",
+      "sha256": "89b4bbe85d437cf367e977fa712e5d18ebbff6a6ff6b41615be13c4480c415db",
+      "duration": 1.137188
+    },
+    "l3-first-period/explanation.ogg": {
+      "text": "The earliest dinosaurs appeared during the Triassic Period, before the Jurassic and Cretaceous.",
+      "spoken_text": "The earliest dinosaurs appeared during the Triassic Period, before the Jurassic and Cretaceous.",
+      "sha256": "7ac4ea05130cc46f00e7b2768afa8c0b3632b9e195872fc18a4ebd6ad8d34712",
+      "duration": 5.4561
+    },
+    "l3-first-period/hint.ogg": {
+      "text": "Think about which of the dinosaur-age periods came first.",
+      "spoken_text": "Think about which of the dinosaur-age periods came first.",
+      "sha256": "71b221c588ff64ca0184036dd09896c78af9605f3aee80a4f189b3f26930e059",
+      "duration": 3.296644
+    },
+    "l3-period-order/question.ogg": {
+      "text": "Which order puts these periods from oldest to youngest?",
+      "spoken_text": "Which order puts these periods from oldest to youngest?",
+      "sha256": "df58bb5fff2e70c3b46d7b28349ff4c48dca0dde6194cdbea7d4a19da5513c31",
+      "duration": 3.064444
+    },
+    "l3-period-order/l3-period-order-0.ogg": {
+      "text": "Jurassic, Triassic, Cretaceous",
+      "spoken_text": "Jurassic, Triassic, Cretaceous",
+      "sha256": "c4063baf0b729011c36f0126c894e322abfd341fec9c51eb23cf4af54f4966a9",
+      "duration": 2.867075
+    },
+    "l3-period-order/l3-period-order-1.ogg": {
+      "text": "Cretaceous, Jurassic, Triassic",
+      "spoken_text": "Cretaceous, Jurassic, Triassic",
+      "sha256": "bf98788edac5598648344f8f91b43819d42bceb807a15552004ce1bb64e7a0ff",
+      "duration": 2.449116
+    },
+    "l3-period-order/l3-period-order-2.ogg": {
+      "text": "Triassic, Cretaceous, Jurassic",
+      "spoken_text": "Triassic, Cretaceous, Jurassic",
+      "sha256": "1f33eef51e6f09098f63d0088a7b5ecfd2cdd0c4fd64ad952c56419739444a94",
+      "duration": 2.913515
+    },
+    "l3-period-order/l3-period-order-3.ogg": {
+      "text": "Triassic, Jurassic, Cretaceous",
+      "spoken_text": "Triassic, Jurassic, Cretaceous",
+      "sha256": "a0bc8ff2a318c6b6ced96de8e4aa9924a83ca109f80cd81363d53d8043901874",
+      "duration": 3.006395
+    },
+    "l3-period-order/explanation.ogg": {
+      "text": "The Mesozoic Era is divided into the Triassic, then the Jurassic, then the Cretaceous.",
+      "spoken_text": "The Mesozoic Era is divided into the Triassic, then the Jurassic, then the Cretaceous.",
+      "sha256": "0ac4a680c0e0b82323a1cb847d84078cb9c81db30ced60a96cd166981d093632",
+      "duration": 5.35161
+    },
+    "l3-period-order/hint.ogg": {
+      "text": "Start with the earliest dinosaur-age period.",
+      "spoken_text": "Start with the earliest dinosaur-age period.",
+      "sha256": "9778930583876687c6770aacc1f5cc44b39b7e103459a7d88023a4c9040e1548",
+      "duration": 2.785805
+    },
+    "l3-stego-time/question.ogg": {
+      "text": "Which period did Stegosaurus live in?",
+      "spoken_text": "Which period did Stegosaurus live in?",
+      "sha256": "21eee25b58134d5d044aa9fb2672b800ed699e643119fca6de2e5c4727a7feec",
+      "duration": 2.391066
+    },
+    "l3-stego-time/l3-stego-time-0.ogg": {
+      "text": "Late Jurassic",
+      "spoken_text": "Late Jurassic",
+      "sha256": "cbbc12c6c516dd9c3a5031249434144f4d0f29bd998918bef63d516accdf5a79",
+      "duration": 1.113968
+    },
+    "l3-stego-time/l3-stego-time-1.ogg": {
+      "text": "Early Triassic",
+      "spoken_text": "Early Triassic",
+      "sha256": "03346f22c82db504c2f49661b448e646d331f9bf449f8b8893967f90b105f183",
+      "duration": 1.276508
+    },
+    "l3-stego-time/l3-stego-time-2.ogg": {
+      "text": "Quaternary",
+      "spoken_text": "Quaternary",
+      "sha256": "b5557e1efd8e9be50e7e033badcdf65d367e30466123db9c0e50cd30005b275c",
+      "duration": 0.963039
+    },
+    "l3-stego-time/l3-stego-time-3.ogg": {
+      "text": "Early Jurassic",
+      "spoken_text": "Early Jurassic",
+      "sha256": "329239136fef600977c51266419efd407a356bd1405a01ed459c1fcaa86e1024",
+      "duration": 1.276508
+    },
+    "l3-stego-time/explanation.ogg": {
+      "text": "Stegosaurus lived in the Late Jurassic. It lived many millions of years before Tyrannosaurus rex.",
+      "spoken_text": "Stegosaurus lived in the Late Jurassic. It lived many millions of years before Tyrannosaurus rex.",
+      "sha256": "8b1eb59405bb8312ba6d37a43da15848a1e35963e9442586c9811bb5e3e239c4",
+      "duration": 5.59542
+    },
+    "l3-stego-time/hint.ogg": {
+      "text": "The dinosaur age lasted a very long time.",
+      "spoken_text": "The dinosaur age lasted a very long time.",
+      "sha256": "e41e5033282b6cd4a5de3ab641092db929fa788acce595dbc0b459886d402cc7",
+      "duration": 2.576825
+    },
+    "l3-rex-time/question.ogg": {
+      "text": "Which period did Tyrannosaurus rex live in?",
+      "spoken_text": "Which period did Tyrannosaurus rex live in?",
+      "sha256": "6fef7ab3b1a2bb712c475c7f29768257ac422b850b7b465869ccbe49e55290c3",
+      "duration": 2.669705
+    },
+    "l3-rex-time/l3-rex-time-0.ogg": {
+      "text": "Early Jurassic",
+      "spoken_text": "Early Jurassic",
+      "sha256": "7eb7ff36c7bacea4ab9a7e6b1a850e6ea693314f2b8241ffbf9190f940151612",
+      "duration": 1.299728
+    },
+    "l3-rex-time/l3-rex-time-1.ogg": {
+      "text": "Early Triassic",
+      "spoken_text": "Early Triassic",
+      "sha256": "1cc151d29680ed7628f0471d553a49f4b32e7a3362f143005fbd19ceaac6e12b",
+      "duration": 1.299728
+    },
+    "l3-rex-time/l3-rex-time-2.ogg": {
+      "text": "Late Cretaceous",
+      "spoken_text": "Late Cretaceous",
+      "sha256": "1096b994124a3894c3f6dee79a1edbe1d542eb4990f4a50aa4b9d3e16ceb04e9",
+      "duration": 1.253288
+    },
+    "l3-rex-time/l3-rex-time-3.ogg": {
+      "text": "Permian",
+      "spoken_text": "Permian",
+      "sha256": "b0a3f2cb2d943d0cd9f772d4f1738ebd93277f849e7c80d10304f10639b6521f",
+      "duration": 0.846939
+    },
+    "l3-rex-time/explanation.ogg": {
+      "text": "Tyrannosaurus rex lived near the end of the Cretaceous Period, long after dinosaurs first appeared.",
+      "spoken_text": "Tyrannosaurus rex lived near the end of the Cretaceous Period, long after dinosaurs first appeared.",
+      "sha256": "d1a70feb6428d905cbe04233fea883c2eff7cedcecd195d9cf2aaba001598afd",
+      "duration": 5.5722
+    },
+    "l3-rex-time/hint.ogg": {
+      "text": "Place it towards the end of the non-bird dinosaur age.",
+      "spoken_text": "Place it towards the end of the non-bird dinosaur age.",
+      "sha256": "fa81aa966977499ddc267cade0c68d1c2df30f653b05974342154281d9c4ca7a",
+      "duration": 3.168934
+    },
+    "l3-never-met/question.ogg": {
+      "text": "Why could a living Stegosaurus not have met a living Tyrannosaurus rex?",
+      "spoken_text": "Why could a living Stegosaurus not have met a living Tyrannosaurus rex?",
+      "sha256": "5277b29adfdca15d0850b8eb96f47effa583753255ba59cea9d908e3a911180a",
+      "duration": 3.935193
+    },
+    "l3-never-met/l3-never-met-0.ogg": {
+      "text": "Stegosaurus lived only in the ocean",
+      "spoken_text": "Stegosaurus lived only in the ocean",
+      "sha256": "71fb3e45f1f86f3ee3ddf257f44a3878a906e757f0567f8f41a3d996a9e9735d",
+      "duration": 2.309796
+    },
+    "l3-never-met/l3-never-met-1.ogg": {
+      "text": "They lived millions of years apart",
+      "spoken_text": "They lived millions of years apart",
+      "sha256": "da61d3f4dac5efc6516657916353db5cccf590014bf50717111b62c90a0b5a6d",
+      "duration": 2.216916
+    },
+    "l3-never-met/l3-never-met-2.ogg": {
+      "text": "Tyrannosaurus rex lived before all dinosaurs",
+      "spoken_text": "Tyrannosaurus rex lived before all dinosaurs",
+      "sha256": "8713529436d6542f26c8a43d3a8456ed191edf4711a2723d8cb2b012655c07cb",
+      "duration": 2.843855
+    },
+    "l3-never-met/l3-never-met-3.ogg": {
+      "text": "Stegosaurus was a mammal",
+      "spoken_text": "Stegosaurus was a mammal",
+      "sha256": "ab19d39f695a4569b59b92902376e0dcb1577f6f03a632e9469ea5cf68436df3",
+      "duration": 1.659637
+    },
+    "l3-never-met/explanation.ogg": {
+      "text": "Stegosaurus lived in the Late Jurassic, while Tyrannosaurus rex lived in the Late Cretaceous. Their lifetimes did not overlap.",
+      "spoken_text": "Stegosaurus lived in the Late Jurassic, while Tyrannosaurus rex lived in the Late Cretaceous. Their lifetimes did not overlap.",
+      "sha256": "72b1abf298020e04dde5f27231e1d0d6b99c781566ac890f5372b17788eb468f",
+      "duration": 7.278866
+    },
+    "l3-never-met/hint.ogg": {
+      "text": "Compare when each dinosaur lived.",
+      "spoken_text": "Compare when each dinosaur lived.",
+      "sha256": "e62edb76ec16782d593d9184de32c55b7050a31c9d6abd265fbf7daf7ef236bc",
+      "duration": 1.984717
+    },
+    "l3-rex-place/question.ogg": {
+      "text": "Tyrannosaurus rex fossils are known from which continent?",
+      "spoken_text": "Tyrannosaurus rex fossils are known from which continent?",
+      "sha256": "14cd4de6d19695819154468070ddad27ed51d0500ab12bb8b23fb42915d12708",
+      "duration": 3.250204
+    },
+    "l3-rex-place/l3-rex-place-0.ogg": {
+      "text": "Antarctica",
+      "spoken_text": "Antarctica",
+      "sha256": "78e39d9088237860a064c37c80394ee27c76eb40b3b7fb1d297709a18128ce7f",
+      "duration": 1.079138
+    },
+    "l3-rex-place/l3-rex-place-1.ogg": {
+      "text": "Australia",
+      "spoken_text": "Australia",
+      "sha256": "868af8758441a562313dac0d0182a533d70e0936859f157cf89c5ff521fdf3ea",
+      "duration": 1.021088
+    },
+    "l3-rex-place/l3-rex-place-2.ogg": {
+      "text": "Africa",
+      "spoken_text": "Africa",
+      "sha256": "5fb299d547954679d8baddf8aa99d454c64dcb2e1d51457b29b73d88a61fbd47",
+      "duration": 0.963039
+    },
+    "l3-rex-place/l3-rex-place-3.ogg": {
+      "text": "North America",
+      "spoken_text": "North America",
+      "sha256": "4af380d30f97fca3703811b74b1f6751f16ee9e84fe15ecf638e8b9e295a0a7a",
+      "duration": 1.230068
+    },
+    "l3-rex-place/explanation.ogg": {
+      "text": "Tyrannosaurus rex lived in what is now North America. Fossils from this region tell us about its Late Cretaceous world.",
+      "spoken_text": "Tyrannosaurus rex lived in what is now North America. Fossils from this region tell us about its Late Cretaceous world.",
+      "sha256": "40175f2281cc99c9aa5620bd1f63c04c454a5f1a51015004ab76220971776be6",
+      "duration": 6.431338
+    },
+    "l3-rex-place/hint.ogg": {
+      "text": "Think about where its known fossils have been found.",
+      "spoken_text": "Think about where its known fossils have been found.",
+      "sha256": "ccfd1153fd007719b4521f282f8b354ad1c36e7fb80ac2c4252cab259df190fa",
+      "duration": 2.530385
+    },
+    "l3-velociraptor-place/question.ogg": {
+      "text": "Velociraptor fossils have been found in which of these countries?",
+      "spoken_text": "Velociraptor fossils have been found in which of these countries?",
+      "sha256": "14758daba85a20b8e907dd9222190f480ea1e55455a496fdbfe5d1a4e8908910",
+      "duration": 3.389524
+    },
+    "l3-velociraptor-place/l3-velociraptor-place-0.ogg": {
+      "text": "Mongolia",
+      "spoken_text": "Mongolia",
+      "sha256": "e2643384f8a9ce8dd29442f6c0f3243a0ff96310a3af394ba97962612d9a2b66",
+      "duration": 1.125578
+    },
+    "l3-velociraptor-place/l3-velociraptor-place-1.ogg": {
+      "text": "Canada",
+      "spoken_text": "Canada",
+      "sha256": "5ccdcfd28120cc7e92672640c6e0844ce73cf880ad0bfc5d011bfeadd87a696a",
+      "duration": 0.835329
+    },
+    "l3-velociraptor-place/l3-velociraptor-place-2.ogg": {
+      "text": "Australia",
+      "spoken_text": "Australia",
+      "sha256": "2c75d57c1dff45772868fa1104f54d5fd5e5b1ce2fa03fead76c3e109374d37d",
+      "duration": 1.102358
+    },
+    "l3-velociraptor-place/l3-velociraptor-place-3.ogg": {
+      "text": "Brazil",
+      "spoken_text": "Brazil",
+      "sha256": "71bc6c98ea58ee2f601861b2d1b3262217fdd95772d9e0934f11c50097a4ab41",
+      "duration": 0.777279
+    },
+    "l3-velociraptor-place/explanation.ogg": {
+      "text": "Velociraptor fossils are known from Mongolia, in Asia. It was much smaller than the raptors often shown in films.",
+      "spoken_text": "Velociraptor fossils are known from Mongolia, in Asia. It was much smaller than the raptors often shown in films.",
+      "sha256": "da8ce645208952797c0f08a3dcd9cb7740b8f38b30861dd5527ab8c0210a8b1e",
+      "duration": 6.338458
+    },
+    "l3-velociraptor-place/hint.ogg": {
+      "text": "Think about the deserts of central Asia.",
+      "spoken_text": "Think about the deserts of central Asia.",
+      "sha256": "18474c6306e74ec5b212ce5c5752d1479b2938af3e8e804815ea1f1211959f50",
+      "duration": 2.216916
+    },
+    "l3-argentinosaurus-place/question.ogg": {
+      "text": "In which country were Argentinosaurus fossils discovered?",
+      "spoken_text": "In which country were Argentinosaurus fossils discovered?",
+      "sha256": "db6f89a90cbc9451c9d6da6a3916a96cf77de25db653e35e3252d573b58d4401",
+      "duration": 3.076054
+    },
+    "l3-argentinosaurus-place/l3-argentinosaurus-place-0.ogg": {
+      "text": "France",
+      "spoken_text": "France",
+      "sha256": "1495b3e8f78e07a75249b671061deef91b5566706efa995dbdbdb6ec6f760fdb",
+      "duration": 0.835329
+    },
+    "l3-argentinosaurus-place/l3-argentinosaurus-place-1.ogg": {
+      "text": "Japan",
+      "spoken_text": "Japan",
+      "sha256": "44d94a7d55cae614b90ca2c532f3730a0c6a1143bae15c3113d7fe0911354d95",
+      "duration": 0.858549
+    },
+    "l3-argentinosaurus-place/l3-argentinosaurus-place-2.ogg": {
+      "text": "Argentina",
+      "spoken_text": "Argentina",
+      "sha256": "ba3c2f9448e24e2f22413f251ed615e92ed62fe039dfaec9eabd81653fa3e70e",
+      "duration": 1.067528
+    },
+    "l3-argentinosaurus-place/l3-argentinosaurus-place-3.ogg": {
+      "text": "Egypt",
+      "spoken_text": "Egypt",
+      "sha256": "a7f20118f7da0c53b0416a4352d38c314fa507c54f81bbfd97f22fbed9b0aa55",
+      "duration": 0.835329
+    },
+    "l3-argentinosaurus-place/explanation.ogg": {
+      "text": "Argentinosaurus fossils were found in Argentina, South America. It was a very large sauropod, but its exact size is uncertain.",
+      "spoken_text": "Argentinosaurus fossils were found in Argentina, South America. It was a very large sauropod, but its exact size is uncertain.",
+      "sha256": "4ad4a64cfcff74df19e4e60c1b15427d69dfa4fa0d94edfb2ae2f9946d21f4b9",
+      "duration": 7.441406
+    },
+    "l3-argentinosaurus-place/hint.ogg": {
+      "text": "Consider where the fossils were discovered, rather than guessing the animal’s size.",
+      "spoken_text": "Consider where the fossils were discovered, rather than guessing the animal’s size.",
+      "sha256": "88a71ceafe439e660f8332cc03b8f54e7f65e782df620e932255362c11b43df9",
+      "duration": 4.608571
+    },
+    "l3-supercontinent/question.ogg": {
+      "text": "What was the large supercontinent of the Triassic called?",
+      "spoken_text": "What was the large supercontinent of the Triassic called?",
+      "sha256": "6882e2df3032164ba19ad04a79090da5310df64e0af68436df9bc2cedf37886b",
+      "duration": 3.006395
+    },
+    "l3-supercontinent/l3-supercontinent-0.ogg": {
+      "text": "Laurasia",
+      "spoken_text": "Laurasia",
+      "sha256": "0172d8f25fbc1ca4a4ae25afb2acc605d2afd376433b7254493b5ef0424b922a",
+      "duration": 1.067528
+    },
+    "l3-supercontinent/l3-supercontinent-1.ogg": {
+      "text": "Pangaea",
+      "spoken_text": "Pan jee uh",
+      "sha256": "ce1f2ecc18da46e38de4b7738935fa62b34a2e1a88a73ed8f4c456fe0d310a83",
+      "duration": 0.835329
+    },
+    "l3-supercontinent/l3-supercontinent-2.ogg": {
+      "text": "Gondwana",
+      "spoken_text": "Gondwana",
+      "sha256": "add828f91754eec052dab0b6bff75d11169d57d71c013fbbf8387913134f3b00",
+      "duration": 1.044308
+    },
+    "l3-supercontinent/l3-supercontinent-3.ogg": {
+      "text": "Rodinia",
+      "spoken_text": "Rodinia",
+      "sha256": "3f2e96e04134025ec41787f96310c58bf621d052c82ce304aa0308a2fada2907",
+      "duration": 0.951429
+    },
+    "l3-supercontinent/explanation.ogg": {
+      "text": "During the Triassic, the continents were joined in a huge landmass called Pangaea. It later broke into smaller landmasses.",
+      "spoken_text": "During the Triassic, the continents were joined in a huge landmass called Pan jee uh. It later broke into smaller landmasses.",
+      "sha256": "85fbb2966d2fc8b6678976a1453f70a9dce4776152dfb1aa65bdba8bd3dbf373",
+      "duration": 6.884127
+    },
+    "l3-supercontinent/hint.ogg": {
+      "text": "Imagine many continents connected together.",
+      "spoken_text": "Imagine many continents connected together.",
+      "sha256": "d647927196076dec67970c2bbb871a214f819dcbc86cd4acd498753d9505ed25",
+      "duration": 2.565215
+    },
+    "l3-extinction-boundary/question.ogg": {
+      "text": "About when did the end-Cretaceous extinction occur?",
+      "spoken_text": "About when did the end-Cretaceous extinction occur?",
+      "sha256": "05b0f958a35342ec52b370691f9bcf9f1f73c7f59be16f2dfb513da447a49510",
+      "duration": 2.971565
+    },
+    "l3-extinction-boundary/l3-extinction-boundary-0.ogg": {
+      "text": "6 thousand years ago",
+      "spoken_text": "6 thousand years ago",
+      "sha256": "4427d1d424b2ef93cff54ba05c9850826020b0f6dfe4997c7c55c8d0a257e12f",
+      "duration": 1.636417
+    },
+    "l3-extinction-boundary/l3-extinction-boundary-1.ogg": {
+      "text": "6 million years ago",
+      "spoken_text": "6 million years ago",
+      "sha256": "8d52a6058bdd45582aabb1a42af9370b3b2721fb0a66a70cc5a40e58b82f73b4",
+      "duration": 1.589977
+    },
+    "l3-extinction-boundary/l3-extinction-boundary-2.ogg": {
+      "text": "660 million years ago",
+      "spoken_text": "660 million years ago",
+      "sha256": "c3302958f02d9be8ea165212c9251d4d8478c8b45db9b069a14679277781553c",
+      "duration": 2.402676
+    },
+    "l3-extinction-boundary/l3-extinction-boundary-3.ogg": {
+      "text": "66 million years ago",
+      "spoken_text": "66 million years ago",
+      "sha256": "1078a36bfdbb421a3a0fd1f046b0debfec9482517a0106940d38580d777fe2f2",
+      "duration": 2.112426
+    },
+    "l3-extinction-boundary/explanation.ogg": {
+      "text": "The end-Cretaceous extinction occurred about 66 million years ago. Non-bird dinosaurs disappeared, but birds survived.",
+      "spoken_text": "The end-Cretaceous extinction occurred about 66 million years ago. Non-bird dinosaurs disappeared, but birds survived.",
+      "sha256": "7581b2d25627bf34c806def82745fa128eedbf71262c5df33db186660c2ff617",
+      "duration": 7.418186
+    },
+    "l3-extinction-boundary/hint.ogg": {
+      "text": "The event was long before modern humans appeared.",
+      "spoken_text": "The event was long before modern humans appeared.",
+      "sha256": "93a8d55b3145ab7c4df330750ed3e2eb079238c334a2539b278c8679438ebe3e",
+      "duration": 2.634875
+    },
+    "l4-palaeontologist/question.ogg": {
+      "text": "What does a palaeontologist study?",
+      "spoken_text": "What does a palaeontologist study?",
+      "sha256": "7211fa150c0768fe56e8e74622962d2706a09b0140dfb7de560e9f838cbc6b04",
+      "duration": 2.042766
+    },
+    "l4-palaeontologist/l4-palaeontologist-0.ogg": {
+      "text": "Ancient life using fossils",
+      "spoken_text": "Ancient life using fossils",
+      "sha256": "5795a44f058c8a088311dfbccc3b5a65d7268f3e56ca10f658bf7b2bcd7a30f3",
+      "duration": 1.787347
+    },
+    "l4-palaeontologist/l4-palaeontologist-1.ogg": {
+      "text": "Only living weather systems",
+      "spoken_text": "Only living weather systems",
+      "sha256": "508f44b8991dc54040007c2884a874a832497a56342d5e6dc598525f26cf49fc",
+      "duration": 1.973107
+    },
+    "l4-palaeontologist/l4-palaeontologist-2.ogg": {
+      "text": "Only stars and planets",
+      "spoken_text": "Only stars and planets",
+      "sha256": "e6298414431aabb16dc8edb4825785d83d730aacb2abf02cb72226856f849790",
+      "duration": 1.636417
+    },
+    "l4-palaeontologist/l4-palaeontologist-3.ogg": {
+      "text": "Only modern machines",
+      "spoken_text": "Only modern machines",
+      "sha256": "c0c027c4c8a9201b5018cea85be9f5f14c4423125bda6bb4490c540970ed4c7a",
+      "duration": 1.624807
+    },
+    "l4-palaeontologist/explanation.ogg": {
+      "text": "Palaeontologists study ancient life, including dinosaurs, using fossils and their geological context.",
+      "spoken_text": "Palaeontologists study ancient life, including dinosaurs, using fossils and their geological context.",
+      "sha256": "8df71e7845711052356791c5affd33878359dc616f2f35dd33ae72594d8c8365",
+      "duration": 6.744807
+    },
+    "l4-palaeontologist/hint.ogg": {
+      "text": "Think about the evidence left by organisms from the past.",
+      "spoken_text": "Think about the evidence left by organisms from the past.",
+      "sha256": "9be4d174d438665ff0960deecaa33a52cccde9bc14ceec5cf4a494a8cc44c2f1",
+      "duration": 3.296644
+    },
+    "l4-trace-fossil/question.ogg": {
+      "text": "Which is a trace fossil showing an animal’s activity?",
+      "spoken_text": "Which is a trace fossil showing an animal’s activity?",
+      "sha256": "66eaa35402a62db111adc978fb771dee37c22847e87231332b1898184d8551a1",
+      "duration": 2.727755
+    },
+    "l4-trace-fossil/l4-trace-fossil-0.ogg": {
+      "text": "A fossil tooth",
+      "spoken_text": "A fossil tooth",
+      "sha256": "89b3eee4e8e68521e93fc36fd723bb9c31dab5a9fb9876f070fc09355947e29d",
+      "duration": 1.183628
+    },
+    "l4-trace-fossil/l4-trace-fossil-1.ogg": {
+      "text": "A fossil skull",
+      "spoken_text": "A fossil skull",
+      "sha256": "f83d1bf68edbb035b6a42cecfc18868e46bfbafe42777eb442509ce58003e8ab",
+      "duration": 1.276508
+    },
+    "l4-trace-fossil/l4-trace-fossil-2.ogg": {
+      "text": "A fossil footprint",
+      "spoken_text": "A fossil footprint",
+      "sha256": "762590c30e7bf020eac22a4b216fe6ba44b41a6b365a54065a3dd49fe1b9889e",
+      "duration": 1.195238
+    },
+    "l4-trace-fossil/l4-trace-fossil-3.ogg": {
+      "text": "A fossil shell",
+      "spoken_text": "A fossil shell",
+      "sha256": "1682d9d3fa64a6af68681adcfd911efbeb072cae20973d0bad7e00ad95e5a2bf",
+      "duration": 1.241678
+    },
+    "l4-trace-fossil/explanation.ogg": {
+      "text": "A footprint is a trace fossil: evidence of an activity. Teeth, skulls and shells are body fossils.",
+      "spoken_text": "A footprint is a trace fossil: evidence of an activity. Teeth, skulls and shells are body fossils.",
+      "sha256": "e6e843a470fd88ab38a12249c9b5797ffd0631012f6701e1219c6b8b70d43ff0",
+      "duration": 5.711519
+    },
+    "l4-trace-fossil/hint.ogg": {
+      "text": "Look for evidence of something an animal did.",
+      "spoken_text": "Look for evidence of something an animal did.",
+      "sha256": "d720fa3f782c0f82aeeb17d18df0636e32fc04aa4f88403e69c646a1adf17912",
+      "duration": 2.391066
+    },
+    "l4-rock-type/question.ogg": {
+      "text": "In which type of rock are fossils usually found?",
+      "spoken_text": "In which type of rock are fossils usually found?",
+      "sha256": "c9096181894cca013795b55b584c7c367cb8e898e7e591db349fc9d6fa274643",
+      "duration": 2.565215
+    },
+    "l4-rock-type/l4-rock-type-0.ogg": {
+      "text": "Fresh volcanic lava",
+      "spoken_text": "Fresh volcanic lava",
+      "sha256": "42b51b2d51623c80c60024fd6579851c95fcb53cab04fe7040001039fe15e5cd",
+      "duration": 1.694467
+    },
+    "l4-rock-type/l4-rock-type-1.ogg": {
+      "text": "Sedimentary rock",
+      "spoken_text": "Sedimentary rock",
+      "sha256": "c3efefe66dc1de68fce15e0c7a70d83c3c4aa78e8ccd8b69029457c4e048156f",
+      "duration": 1.253288
+    },
+    "l4-rock-type/l4-rock-type-2.ogg": {
+      "text": "Metallic meteorites",
+      "spoken_text": "Metallic meteorites",
+      "sha256": "8723cbcb89f2136cce032889120aa408b7f430152de9dd6142cfa4f0da2ea4e1",
+      "duration": 1.636417
+    },
+    "l4-rock-type/l4-rock-type-3.ogg": {
+      "text": "Granite formed from magma",
+      "spoken_text": "Granite formed from magma",
+      "sha256": "e703f4400195702682aa09c100f470f224aeaa871b1a078d52812396ca8e3a9a",
+      "duration": 1.694467
+    },
+    "l4-rock-type/explanation.ogg": {
+      "text": "Fossils are usually found in sedimentary rocks, formed from layers of mud, sand, silt or other sediment.",
+      "spoken_text": "Fossils are usually found in sedimentary rocks, formed from layers of mud, sand, silt or other sediment.",
+      "sha256": "61a79cc5aaa418120bb9a414e997d86a560be24495b6e07f3a20136e918c785f",
+      "duration": 6.582268
+    },
+    "l4-rock-type/hint.ogg": {
+      "text": "Think about rock made from layers of settled material.",
+      "spoken_text": "Think about rock made from layers of settled material.",
+      "sha256": "46f0f29d1eab530f7e571bb48df6f0670373118334015e637068afa3dfda642e",
+      "duration": 2.867075
+    },
+    "l4-mineral-bones/question.ogg": {
+      "text": "What often happens to buried bones during fossilisation?",
+      "spoken_text": "What often happens to buried bones during fossilisation?",
+      "sha256": "23d75870b252df4643d766b384d9fa49198aec88683f6a0745f350e723e1f587",
+      "duration": 3.273424
+    },
+    "l4-mineral-bones/l4-mineral-bones-0.ogg": {
+      "text": "They become living bone again",
+      "spoken_text": "They become living bone again",
+      "sha256": "39abd899a6cc3b6f389a685e53ee40c4cc6b90d85502dbdc2e9490eb7ba62867",
+      "duration": 1.717687
+    },
+    "l4-mineral-bones/l4-mineral-bones-1.ogg": {
+      "text": "They turn directly into feathers",
+      "spoken_text": "They turn directly into feathers",
+      "sha256": "80e92cd3b17fc75d9c37943919fbd99a1ebe29755cc8e5d3a406e96fde96cbf0",
+      "duration": 2.031156
+    },
+    "l4-mineral-bones/l4-mineral-bones-2.ogg": {
+      "text": "They shrink into seeds",
+      "spoken_text": "They shrink into seeds",
+      "sha256": "4944721d46df6ed97e154b00768c1c172c1598ddce53bd2f7c6f86b08bcd4b53",
+      "duration": 1.450658
+    },
+    "l4-mineral-bones/l4-mineral-bones-3.ogg": {
+      "text": "Minerals replace or fill parts of them",
+      "spoken_text": "Minerals replace or fill parts of them",
+      "sha256": "07a4322c984d3dd0ae492bf65482291627c15382dd81d5a1d848ce98223caf2e",
+      "duration": 2.391066
+    },
+    "l4-mineral-bones/explanation.ogg": {
+      "text": "During fossilisation, minerals can replace original material or fill spaces in buried remains. Not every fossil forms in the same way.",
+      "spoken_text": "During fossilisation, minerals can replace original material or fill spaces in buried remains. Not every fossil forms in the same way.",
+      "sha256": "f6348f71ceb9efe44d7acbee6a69d0a3d7612bd5db187fa3d8273de19dc83530",
+      "duration": 8.172834
+    },
+    "l4-mineral-bones/hint.ogg": {
+      "text": "Consider what groundwater can carry into buried material.",
+      "spoken_text": "Consider what groundwater can carry into buried material.",
+      "sha256": "df6ed4351a2835900f56dcd77f2771a24e71187e6281e18bd28918538a3ac320",
+      "duration": 3.308254
+    },
+    "l4-living-dinosaurs/question.ogg": {
+      "text": "Which of these is a living dinosaur?",
+      "spoken_text": "Which of these is a living dinosaur?",
+      "sha256": "4cd970a1109d086ba9fabe9c89d5b613320161d93afbdb36d832e8711205efab",
+      "duration": 2.205306
+    },
+    "l4-living-dinosaurs/l4-living-dinosaurs-0.ogg": {
+      "text": "A robin",
+      "spoken_text": "A robin",
+      "sha256": "7f7d9d37e453bc4af1042ce5b6fa89ac712c0a06a8e49884f001508ae51e612e",
+      "duration": 0.870159
+    },
+    "l4-living-dinosaurs/l4-living-dinosaurs-1.ogg": {
+      "text": "A crocodile",
+      "spoken_text": "A crocodile",
+      "sha256": "25fbcac2a83599a9c16366218dc9a1dcb6271b868650074ef017295e2c3c8f4e",
+      "duration": 1.032698
+    },
+    "l4-living-dinosaurs/l4-living-dinosaurs-2.ogg": {
+      "text": "A frog",
+      "spoken_text": "A frog",
+      "sha256": "4f87a96986cf8a23f0caa5b3c7163110e3f30dacbc279c70564dbc4af7a29030",
+      "duration": 0.800499
+    },
+    "l4-living-dinosaurs/l4-living-dinosaurs-3.ogg": {
+      "text": "A bat",
+      "spoken_text": "A bat",
+      "sha256": "8cff8395c57e2324e438c8d97c29fdc2a0004d2f16e02bae5448d40da259e76f",
+      "duration": 0.649569
+    },
+    "l4-living-dinosaurs/explanation.ogg": {
+      "text": "Birds are living dinosaurs. They evolved within the theropod dinosaur group; crocodiles are relatives outside the dinosaur group.",
+      "spoken_text": "Birds are living dinosaurs. They evolved within the theropod dinosaur group; crocodiles are relatives outside the dinosaur group.",
+      "sha256": "84899791a06b21cc0acf269c1f6f16971f8f76a4da3310886d34f30713ba703b",
+      "duration": 6.942177
+    },
+    "l4-living-dinosaurs/hint.ogg": {
+      "text": "Consider the evolutionary family tree of each animal.",
+      "spoken_text": "Consider the evolutionary family tree of each animal.",
+      "sha256": "bc5feac38bf0efe6fc6ff6f3d19962af75c58f3c1a3f83e032f281021dd2a101",
+      "duration": 2.809025
+    },
+    "l4-bird-evidence/question.ogg": {
+      "text": "Which fossil discovery supports the link between birds and other dinosaurs?",
+      "spoken_text": "Which fossil discovery supports the link between birds and other dinosaurs?",
+      "sha256": "4fab02c2e300251efd89dc4555bd7893f85a7e18852aea7c4618b069cf55affd",
+      "duration": 4.039683
+    },
+    "l4-bird-evidence/l4-bird-evidence-0.ogg": {
+      "text": "Modern cars beside bones",
+      "spoken_text": "Modern cars beside bones",
+      "sha256": "ac639b12646709ba78b7dfd4629ea39cb9258c23762516cde4b300d1f73e9971",
+      "duration": 1.891837
+    },
+    "l4-bird-evidence/l4-bird-evidence-1.ogg": {
+      "text": "Dinosaurs wearing clothes",
+      "spoken_text": "Dinosaurs wearing clothes",
+      "sha256": "4c5b2cd7946a84b35c4654bdb396163d5cea987d4093c5b5c51877201e1a0b36",
+      "duration": 1.810567
+    },
+    "l4-bird-evidence/l4-bird-evidence-2.ogg": {
+      "text": "Feathers preserved with theropod fossils",
+      "spoken_text": "Feathers preserved with theropod fossils",
+      "sha256": "17ca60bd0f76dd8cc315711ad5e37bf5c93309a98098d6973fa5d70ac08babd7",
+      "duration": 2.135646
+    },
+    "l4-bird-evidence/l4-bird-evidence-3.ogg": {
+      "text": "Dinosaur bones made of wood",
+      "spoken_text": "Dinosaur bones made of wood",
+      "sha256": "4b27642b9c598fe9d14a94110e3311687edd31216e5e3ffc596bd6897a30d93d",
+      "duration": 1.775737
+    },
+    "l4-bird-evidence/explanation.ogg": {
+      "text": "Feathered theropod fossils support the evolutionary connection between birds and other dinosaurs, alongside many shared skeletal features.",
+      "spoken_text": "Feathered theropod fossils support the evolutionary connection between birds and other dinosaurs, alongside many shared skeletal features.",
+      "sha256": "15fd3a9ea2e6009edcee6e8c6e821caf6891d0cc11c7df202a1181343972e352",
+      "duration": 7.522676
+    },
+    "l4-bird-evidence/hint.ogg": {
+      "text": "Look for a body covering also found in living birds.",
+      "spoken_text": "Look for a body covering also found in living birds.",
+      "sha256": "5c5b892a8f5365c0847f52f338ad8781a8bbfc4403a03107651222590a5fa4d5",
+      "duration": 2.994785
+    },
+    "l4-theropod-group/question.ogg": {
+      "text": "Which dinosaur group includes both Tyrannosaurus rex and modern birds?",
+      "spoken_text": "Which dinosaur group includes both Tyrannosaurus rex and modern birds?",
+      "sha256": "2e28e7530acc2bc59238d121db284e4fbb4d5e53a7f1e7cdf309ffc881d33cba",
+      "duration": 4.190612
+    },
+    "l4-theropod-group/l4-theropod-group-0.ogg": {
+      "text": "Sauropods",
+      "spoken_text": "Sauropods",
+      "sha256": "f5cac89b1ade83e1f05bc78d8e526f986bb569a9dea8a2e7f6f24b1026570854",
+      "duration": 0.951429
+    },
+    "l4-theropod-group/l4-theropod-group-1.ogg": {
+      "text": "Theropods",
+      "spoken_text": "Theropods",
+      "sha256": "75a88bbb90ddf2f2a8241234ed80ccd5c14c9347a33a69966e03a9651bb5634c",
+      "duration": 0.893379
+    },
+    "l4-theropod-group/l4-theropod-group-2.ogg": {
+      "text": "Ceratopsians",
+      "spoken_text": "Ceratopsians",
+      "sha256": "29ec0308cd5805ad592db8051a6b86d7401580eded5351db8f8e3b5083f2270c",
+      "duration": 1.311338
+    },
+    "l4-theropod-group/l4-theropod-group-3.ogg": {
+      "text": "Ankylosaurs",
+      "spoken_text": "Ankylosaurs",
+      "sha256": "e5b592ba7c3bd18b12a0dd263d673aab495734b75f4c4a9a8a78f4e9f3897fad",
+      "duration": 1.160408
+    },
+    "l4-theropod-group/explanation.ogg": {
+      "text": "Tyrannosaurus rex and birds belong to the theropod group. Birds evolved within one branch of theropods, not directly from Tyrannosaurus rex.",
+      "spoken_text": "Tyrannosaurus rex and birds belong to the theropod group. Birds evolved within one branch of theropods, not directly from Tyrannosaurus rex.",
+      "sha256": "da9c2dc6768eb4f2d5b109dc64aba86de620acb7efe8e1fdc5602479369c69c5",
+      "duration": 7.882585
+    },
+    "l4-theropod-group/hint.ogg": {
+      "text": "Compare their evolutionary groups, not just their sizes.",
+      "spoken_text": "Compare their evolutionary groups, not just their sizes.",
+      "sha256": "20ef1cc7258047b775d060d5883daeef800a7117cff36d30d9d86a387f548cae",
+      "duration": 3.668163
+    },
+    "l4-context/question.ogg": {
+      "text": "Why record the rock layer and location of a fossil?",
+      "spoken_text": "Why record the rock layer and location of a fossil?",
+      "sha256": "2abf73eee89a188c81409a0e64cd1f0377813dabea41380d569102119c5b9e09",
+      "duration": 2.878685
+    },
+    "l4-context/l4-context-0.ogg": {
+      "text": "To decide its colour from the map",
+      "spoken_text": "To decide its colour from the map",
+      "sha256": "f19574a2c7c2ab1c6976341cb502ccb03378f05f76869c00f49ab09c8184510e",
+      "duration": 1.775737
+    },
+    "l4-context/l4-context-1.ogg": {
+      "text": "To make the fossil heavier",
+      "spoken_text": "To make the fossil heavier",
+      "sha256": "75047b1110acdbf5136308ce3b382702adfb663863e36fc8f7668993fa88b7a9",
+      "duration": 1.648027
+    },
+    "l4-context/l4-context-2.ogg": {
+      "text": "To prove all fossils have the same age",
+      "spoken_text": "To prove all fossils have the same age",
+      "sha256": "8e531f3c0a848174ee6f3e81356ccde97f9fbce30d7d994f853d564600a7ec08",
+      "duration": 2.240136
+    },
+    "l4-context/l4-context-3.ogg": {
+      "text": "To understand its age and surroundings",
+      "spoken_text": "To understand its age and surroundings",
+      "sha256": "a24fe85258bb4a4af49cb0eecd9f3fc4943f1978c599e1f8d0fba198d9f23b43",
+      "duration": 2.309796
+    },
+    "l4-context/explanation.ogg": {
+      "text": "A fossil’s rock layer and location give scientists evidence about its age and ancient environment. Removing it without a record loses important context.",
+      "spoken_text": "A fossil’s rock layer and location give scientists evidence about its age and ancient environment. Removing it without a record loses important context.",
+      "sha256": "00de8d1251d217a6f1b7bcdcad69c7e49ff081c1cbab95ab38ed2a0d19856127",
+      "duration": 8.079955
+    },
+    "l4-context/hint.ogg": {
+      "text": "The rock around a fossil is evidence too.",
+      "spoken_text": "The rock around a fossil is evidence too.",
+      "sha256": "074b42473cf97dfa20e4f2b9f54f9513d4df590e6f5fa9e8d710d6bfd2e21613",
+      "duration": 2.460726
+    },
+    "l4-hard-parts/question.ogg": {
+      "text": "Which parts are generally most likely to be preserved as fossils?",
+      "spoken_text": "Which parts are generally most likely to be preserved as fossils?",
+      "sha256": "697c22b502e97d374e18d8c8a0ecd5efa21316164df1b5bb4eeeff882fe8d29e",
+      "duration": 3.586893
+    },
+    "l4-hard-parts/l4-hard-parts-0.ogg": {
+      "text": "Hard parts such as teeth and bones",
+      "spoken_text": "Hard parts such as teeth and bones",
+      "sha256": "0fc2bca04df77697bcae27be76ab70006abfdc86cc03c33f6671d255da62f834",
+      "duration": 2.971565
+    },
+    "l4-hard-parts/l4-hard-parts-1.ogg": {
+      "text": "Only soft organs",
+      "spoken_text": "Only soft organs",
+      "sha256": "ff5428b6c56afdeb71afd8af1e51b7d63dacdc72f9f492f7c5f374285c418b09",
+      "duration": 1.589977
+    },
+    "l4-hard-parts/l4-hard-parts-2.ogg": {
+      "text": "Only flowing blood",
+      "spoken_text": "Only flowing blood",
+      "sha256": "50b1235b041c9527a39138c241cad0087f995b6d79aff403ce03ac19c154bd5d",
+      "duration": 1.311338
+    },
+    "l4-hard-parts/l4-hard-parts-3.ogg": {
+      "text": "Only an animal’s voice",
+      "spoken_text": "Only an animal’s voice",
+      "sha256": "ab04d4b0cd8df8cf6564c693add2d523d925019d4d522daf3de83791dea806ce",
+      "duration": 1.694467
+    },
+    "l4-hard-parts/explanation.ogg": {
+      "text": "Hard parts such as bones, teeth and shells are more likely to survive fossilisation than soft tissues. This makes the fossil record incomplete.",
+      "spoken_text": "Hard parts such as bones, teeth and shells are more likely to survive fossilisation than soft tissues. This makes the fossil record incomplete.",
+      "sha256": "635b43167c7ccb2f6679d630621e6c40aff5274428f8630795da50f5b80f675a",
+      "duration": 7.557506
+    },
+    "l4-hard-parts/hint.ogg": {
+      "text": "Think about which materials are more durable after death.",
+      "spoken_text": "Think about which materials are more durable after death.",
+      "sha256": "461129e59b1fcc38e33f25ac1600bcaca31fa229d13aca709d664e9cd10830a6",
+      "duration": 3.052834
+    },
+    "l4-coprolite/question.ogg": {
+      "text": "What is a coprolite?",
+      "spoken_text": "What is a coprolite?",
+      "sha256": "a42bb71569c6a803a7a7ac45a0c0f93182132357a505b04e05306df67f640f16",
+      "duration": 1.439048
+    },
+    "l4-coprolite/l4-coprolite-0.ogg": {
+      "text": "A newly laid egg",
+      "spoken_text": "A newly laid egg",
+      "sha256": "55c9f82c8c00f6a720c497f110c48d88519cdb8a4e433405ef545ca9e758d524",
+      "duration": 1.218458
+    },
+    "l4-coprolite/l4-coprolite-1.ogg": {
+      "text": "A modern feather",
+      "spoken_text": "A modern feather",
+      "sha256": "bc25f0faccd138ccac94ed61bd78ec8088e6170a91491598cb73e7ae51161995",
+      "duration": 1.322948
+    },
+    "l4-coprolite/l4-coprolite-2.ogg": {
+      "text": "Fossilised poo",
+      "spoken_text": "Fossilised poo",
+      "sha256": "63717a5a7d3ea690a47ec316ed3cef7bbd1be848e45f50fc744cd8f8648ae84f",
+      "duration": 1.206848
+    },
+    "l4-coprolite/l4-coprolite-3.ogg": {
+      "text": "A dinosaur’s nickname",
+      "spoken_text": "A dinosaur’s nickname",
+      "sha256": "d15cc238cb99e4494316c0c105b2c163371d1fb9fb45297947a0d972e4141fa8",
+      "duration": 1.450658
+    },
+    "l4-coprolite/explanation.ogg": {
+      "text": "A coprolite is fossilised poo. It can contain clues about ancient animals and their diets.",
+      "spoken_text": "A coprolite is fossilised poo. It can contain clues about ancient animals and their diets.",
+      "sha256": "c20802c176de5e79c9dd674b447d93577988bf876d1604e44f999845c15cc31c",
+      "duration": 4.887211
+    },
+    "l4-coprolite/hint.ogg": {
+      "text": "Some fossils preserve evidence of everyday activities.",
+      "spoken_text": "Some fossils preserve evidence of everyday activities.",
+      "sha256": "bcf2cbcc0af7ac96a80f45cd7c79be23ff6b02ebfe1b5a30b7dd352494591933",
+      "duration": 3.273424
+    },
+    "l5-footprint-limit/question.ogg": {
+      "text": "A scientist finds one fossil footprint, with no bones nearby. Which conclusion is safest?",
+      "spoken_text": "A scientist finds one fossil footprint, with no bones nearby. Which conclusion is safest?",
+      "sha256": "1e5549899dccefbb00fc2832c64c7e29ad34515b6918b169f1614d642d5cb6c7",
+      "duration": 5.769569
+    },
+    "l5-footprint-limit/l5-footprint-limit-0.ogg": {
+      "text": "The exact species is always known",
+      "spoken_text": "The exact species is always known",
+      "sha256": "ac0f92ddee8b9cd9f07eb6f09503b64e54a3d4a356ba232e0ecbdc7353f81f4d",
+      "duration": 2.251746
+    },
+    "l5-footprint-limit/l5-footprint-limit-1.ogg": {
+      "text": "An animal left a track, but its exact species may be uncertain",
+      "spoken_text": "An animal left a track, but its exact species may be uncertain",
+      "sha256": "a9f6f3b08b6099db00f4b7ea62ba737d485e3c458db93b2e86f28649c9d5bc58",
+      "duration": 4.213832
+    },
+    "l5-footprint-limit/l5-footprint-limit-2.ogg": {
+      "text": "Its skin colour is known",
+      "spoken_text": "Its skin colour is known",
+      "sha256": "0cfa8ac6a4b7efdb8ad6ed5e819b03820271092098bd62bcb5bbf7aca88aef37",
+      "duration": 1.578367
+    },
+    "l5-footprint-limit/l5-footprint-limit-3.ogg": {
+      "text": "Its whole life story is known",
+      "spoken_text": "Its whole life story is known",
+      "sha256": "2a3ad032542b5f43df1b0fd5cc88219d3fa43d0952be2edd559141b4ec7e7172",
+      "duration": 1.868617
+    },
+    "l5-footprint-limit/explanation.ogg": {
+      "text": "A footprint records an animal’s activity. Without more evidence, scientists may not be able to identify the exact species that made it.",
+      "spoken_text": "A footprint records an animal’s activity. Without more evidence, scientists may not be able to identify the exact species that made it.",
+      "sha256": "ca3b8460be4688f8ea2f08fddbfff74977d2ee2636e58879a58dfd7cf9347462",
+      "duration": 7.615556
+    },
+    "l5-footprint-limit/hint.ogg": {
+      "text": "Separate what the evidence shows from what it cannot show.",
+      "spoken_text": "Separate what the evidence shows from what it cannot show.",
+      "sha256": "317af29b2058bdf4ef8e7c9783f1385afd849db40f5e4ef0a24d00fe4d167157",
+      "duration": 2.936735
+    },
+    "l5-colour-limit/question.ogg": {
+      "text": "Why can’t scientists usually work out skin colour from dinosaur bones alone?",
+      "spoken_text": "Why can’t scientists usually work out skin colour from dinosaur bones alone?",
+      "sha256": "4397a70c0140011fe31d97cf216c46c8c0963601742531c495cf760b1ce6f08d",
+      "duration": 4.237052
+    },
+    "l5-colour-limit/l5-colour-limit-0.ogg": {
+      "text": "All dinosaurs were the same colour",
+      "spoken_text": "All dinosaurs were the same colour",
+      "sha256": "309ccae8fe144cd1c7e7a93fe7b91afa7f5ffa64ca5fdc35bb50cd7e33d23f0d",
+      "duration": 2.112426
+    },
+    "l5-colour-limit/l5-colour-limit-1.ogg": {
+      "text": "Bones always preserve complete skin",
+      "spoken_text": "Bones always preserve complete skin",
+      "sha256": "5305816840ee323e44247db7337970c8cf26ba727a7947bb77f3e087797bfedc",
+      "duration": 2.158866
+    },
+    "l5-colour-limit/l5-colour-limit-2.ogg": {
+      "text": "Dinosaurs had no skin",
+      "spoken_text": "Dinosaurs had no skin",
+      "sha256": "256620020de74372a17a4df91310571cf8ebfb8d39c97beeaff7c165275c1c6f",
+      "duration": 1.810567
+    },
+    "l5-colour-limit/l5-colour-limit-3.ogg": {
+      "text": "Bones usually lack the original skin pigment evidence",
+      "spoken_text": "Bones usually lack the original skin pigment evidence",
+      "sha256": "f34cf5fd552752826193e1dc5a7fb2adb5065928ba3b7afb8a412cc7a11c4bca",
+      "duration": 3.285034
+    },
+    "l5-colour-limit/explanation.ogg": {
+      "text": "Bones alone usually do not preserve skin colour. In rare fossils, special evidence such as preserved pigment structures can help researchers investigate colour.",
+      "spoken_text": "Bones alone usually do not preserve skin colour. In rare fossils, special evidence such as preserved pigment structures can help researchers investigate colour.",
+      "sha256": "068786b9de739107b5f342f6f5237db55b9b4151e5dea4502cce959a091dd7f0",
+      "duration": 8.869433
+    },
+    "l5-colour-limit/hint.ogg": {
+      "text": "Think about where an animal’s colour comes from.",
+      "spoken_text": "Think about where an animal’s colour comes from.",
+      "sha256": "973467c5bff2151f71b7e7a0336e1a74bb94198a2bc8b755b67ed2075f2ee584",
+      "duration": 2.205306
+    },
+    "l5-flight-limit/question.ogg": {
+      "text": "A dinosaur fossil has feathers. What can we conclude from that fact alone?",
+      "spoken_text": "A dinosaur fossil has feathers. What can we conclude from that fact alone?",
+      "sha256": "e5f45a72efcae346b9f234c16dc49c54a24c18f07beb964033acf955d3550648",
+      "duration": 4.562132
+    },
+    "l5-flight-limit/l5-flight-limit-0.ogg": {
+      "text": "It had feathers, but it did not necessarily fly",
+      "spoken_text": "It had feathers, but it did not necessarily fly",
+      "sha256": "0adfd82cf03e285711a5bb7e4100b11a938c74a3531624feb06f6e062a8d3504",
+      "duration": 3.285034
+    },
+    "l5-flight-limit/l5-flight-limit-1.ogg": {
+      "text": "It definitely flew across oceans",
+      "spoken_text": "It definitely flew across oceans",
+      "sha256": "c04fe022efbcc9a478714ddef15986b4928e7386b493609f83e94edfef20023f",
+      "duration": 2.042766
+    },
+    "l5-flight-limit/l5-flight-limit-2.ogg": {
+      "text": "It was definitely a modern bird",
+      "spoken_text": "It was definitely a modern bird",
+      "sha256": "638d10c0bdf642bdfe00769549067fee2f8d163d6070e812de045d26d91e60e6",
+      "duration": 1.706077
+    },
+    "l5-flight-limit/l5-flight-limit-3.ogg": {
+      "text": "It could not have lived on land",
+      "spoken_text": "It could not have lived on land",
+      "sha256": "f713773495725d3a4d3e1c9f5c721846259f7c981781e2d64777e0cf7c61a0fc",
+      "duration": 1.729297
+    },
+    "l5-flight-limit/explanation.ogg": {
+      "text": "Feathers existed in dinosaurs before the evolution of modern birds. Finding feathers alone does not prove that an animal could fly.",
+      "spoken_text": "Feathers existed in dinosaurs before the evolution of modern birds. Finding feathers alone does not prove that an animal could fly.",
+      "sha256": "2cdd3ee4da1fc385dd3cad5d8dd3a816e87f5ed5118fa5f320477413d25ba9c7",
+      "duration": 7.267256
+    },
+    "l5-flight-limit/hint.ogg": {
+      "text": "A feature can have more than one use.",
+      "spoken_text": "A feature can have more than one use.",
+      "sha256": "d21269981cdbf761e1f8716de6fbc90d81da3c8224714d3e56b6ea083fdca1a7",
+      "duration": 2.135646
+    },
+    "l5-dimetrodon/question.ogg": {
+      "text": "Why is Dimetrodon excluded from the dinosaur group?",
+      "spoken_text": "Why is Dimetrodon excluded from the dinosaur group?",
+      "sha256": "aada151613cbded777d55e3e8ff1019b946d872dad76806e88a866be8a591a3b",
+      "duration": 3.076054
+    },
+    "l5-dimetrodon/l5-dimetrodon-0.ogg": {
+      "text": "It was a bird",
+      "spoken_text": "It was a bird",
+      "sha256": "cdde8af3df3dc919aac9fb6a1865937c0d7161f2da2075e4b2f3d60edce3f09b",
+      "duration": 1.067528
+    },
+    "l5-dimetrodon/l5-dimetrodon-1.ogg": {
+      "text": "It was a modern mammal",
+      "spoken_text": "It was a modern mammal",
+      "sha256": "20f6a7be3dbd456c962c4260bec27b3677138887f20587a990a2e1588fb70d2e",
+      "duration": 1.346168
+    },
+    "l5-dimetrodon/l5-dimetrodon-2.ogg": {
+      "text": "It belonged to the separate synapsid lineage",
+      "spoken_text": "It belonged to the separate synapsid lineage",
+      "sha256": "e21c85520c5fa42f2015a6a63a993679c72bf10657893a18b316c8a426998d79",
+      "duration": 2.414286
+    },
+    "l5-dimetrodon/l5-dimetrodon-3.ogg": {
+      "text": "It was another name for Spinosaurus",
+      "spoken_text": "It was another name for Spinosaurus",
+      "sha256": "4caac89e4f6a472a61c9ac856962ce263eec63ed2729100d0edd9616cde9a779",
+      "duration": 2.286576
+    },
+    "l5-dimetrodon/explanation.ogg": {
+      "text": "Dimetrodon belonged to the synapsid lineage, the broader evolutionary group that also includes mammals. It lived before dinosaurs and was not one.",
+      "spoken_text": "Dimetrodon belonged to the synapsid lineage, the broader evolutionary group that also includes mammals. It lived before dinosaurs and was not one.",
+      "sha256": "565907a10e7313c8ea5d022714ffda53b09e155fc3ec9cf8c8cc179afa153db3",
+      "duration": 8.439864
+    },
+    "l5-dimetrodon/hint.ogg": {
+      "text": "Similar-looking back features do not prove close relationships.",
+      "spoken_text": "Similar-looking back features do not prove close relationships.",
+      "sha256": "f344a9c8672239f07173e93eb543b3c9f7dc62bf0f71dd65967889f8f0a62848",
+      "duration": 4.364762
+    },
+    "l5-marine-reptile/question.ogg": {
+      "text": "Which of these was an extinct marine reptile rather than a dinosaur?",
+      "spoken_text": "Which of these was an extinct marine reptile rather than a dinosaur?",
+      "sha256": "24bef63899df44d12d558e08752059c452a8fad228cc738160f017ee5fe7cca0",
+      "duration": 3.726213
+    },
+    "l5-marine-reptile/l5-marine-reptile-0.ogg": {
+      "text": "Diplodocus",
+      "spoken_text": "Diplodocus",
+      "sha256": "b569936bc0f91f419ab542f9d5f023cf8b2034c1c153e8f6df34f3f1cd53a28f",
+      "duration": 1.044308
+    },
+    "l5-marine-reptile/l5-marine-reptile-1.ogg": {
+      "text": "Ichthyosaurus",
+      "spoken_text": "Ichthyosaurus",
+      "sha256": "0c24105f71c61d299a587ecbbec55e55234239c974ec27d4dbba666722d93baa",
+      "duration": 1.241678
+    },
+    "l5-marine-reptile/l5-marine-reptile-2.ogg": {
+      "text": "Triceratops",
+      "spoken_text": "Triceratops",
+      "sha256": "1c494e7b4e05f3ddca2a3c61d9aef0aa6a69768e87c38f1cabf1b1e7e95ec114",
+      "duration": 1.183628
+    },
+    "l5-marine-reptile/l5-marine-reptile-3.ogg": {
+      "text": "Stegosaurus",
+      "spoken_text": "Stegosaurus",
+      "sha256": "cea4ce00ffb7eafacec9a0971b845b20d8ff42de018577f5df11deb64bf3c91f",
+      "duration": 1.241678
+    },
+    "l5-marine-reptile/explanation.ogg": {
+      "text": "Ichthyosaurus was an ichthyosaur, a group of marine reptiles outside the dinosaur group. Living swimming birds are dinosaurs, so habitat alone is not enough to classify an animal.",
+      "spoken_text": "Ichthyosaurus was an ichthyosaur, a group of marine reptiles outside the dinosaur group. Living swimming birds are dinosaurs, so habitat alone is not enough to classify an animal.",
+      "sha256": "fad8d8922390bfa5afbf1bcb3b1d02764fcb039f8654a9ecd90a894fbbbc11ff",
+      "duration": 9.925941
+    },
+    "l5-marine-reptile/hint.ogg": {
+      "text": "Use evolutionary groups rather than just where an animal lived.",
+      "spoken_text": "Use evolutionary groups rather than just where an animal lived.",
+      "sha256": "ce543232dc122042a30816c5479ff7ecdb681de3270c03a964f61dbe605a1872",
+      "duration": 3.424354
+    },
+    "l5-index-fossils/question.ogg": {
+      "text": "The same short-lived index fossil occurs in two rock layers far apart. What does this suggest?",
+      "spoken_text": "The same short-lived index fossil occurs in two rock layers far apart. What does this suggest?",
+      "sha256": "e18810cb63be94857381de321ec9383fc30d0781bcd17b62be41795a05382405",
+      "duration": 5.665079
+    },
+    "l5-index-fossils/l5-index-fossils-0.ogg": {
+      "text": "The rocks must have the same colour",
+      "spoken_text": "The rocks must have the same colour",
+      "sha256": "6f9260a62c584d7471174dbc88291e4dc90ed3a4431960400260bc83811c470a",
+      "duration": 1.984717
+    },
+    "l5-index-fossils/l5-index-fossils-1.ogg": {
+      "text": "The rocks contain the same dinosaur species",
+      "spoken_text": "The rocks contain the same dinosaur species",
+      "sha256": "52f3f2b4b415e11054368c23ebc2b2e228f6baeba21d085cdb0f2f33a50b6484",
+      "duration": 2.762585
+    },
+    "l5-index-fossils/l5-index-fossils-2.ogg": {
+      "text": "The rocks were formed yesterday",
+      "spoken_text": "The rocks were formed yesterday",
+      "sha256": "05a80ab42806ce3c9fcb3e00364ac01e45aa1bbf8f968007c86e443fbbd74872",
+      "duration": 1.659637
+    },
+    "l5-index-fossils/l5-index-fossils-3.ogg": {
+      "text": "The layers formed at roughly the same time",
+      "spoken_text": "The layers formed at roughly the same time",
+      "sha256": "0ff04fc40cf8a7ef60e1bdc18fa782e16ee185afc4223a33282edd70b0a0b542",
+      "duration": 2.309796
+    },
+    "l5-index-fossils/explanation.ogg": {
+      "text": "Index fossils come from organisms that were widespread but existed for a relatively short geological time. They help scientists compare the ages of rock layers.",
+      "spoken_text": "Index fossils come from organisms that were widespread but existed for a relatively short geological time. They help scientists compare the ages of rock layers.",
+      "sha256": "9e29c12875ace5dea11638b6db0fa0a9e7fc1270959286560e17b6cbc40d16bb",
+      "duration": 8.718503
+    },
+    "l5-index-fossils/hint.ogg": {
+      "text": "Think about why a widespread fossil with a narrow time range is useful.",
+      "spoken_text": "Think about why a widespread fossil with a narrow time range is useful.",
+      "sha256": "7f58bd5ad42bc9ff28edcfe525cea3b290bf1fbd25859c38c63be7d1064864b5",
+      "duration": 3.586893
+    },
+    "l5-incomplete-record/question.ogg": {
+      "text": "Why does the fossil record give an incomplete picture of ancient life?",
+      "spoken_text": "Why does the fossil record give an incomplete picture of ancient life?",
+      "sha256": "3cba8944b2c3ae7912b2c0e2029868f41316d7ba280c945744c42d5ca1208873",
+      "duration": 3.644943
+    },
+    "l5-incomplete-record/l5-incomplete-record-0.ogg": {
+      "text": "Many organisms decayed without becoming fossils",
+      "spoken_text": "Many organisms decayed without becoming fossils",
+      "sha256": "26fa93fd2a7ae41fdbb8475f681e5028e873da95221a94b3c4db12f6523864a3",
+      "duration": 2.959955
+    },
+    "l5-incomplete-record/l5-incomplete-record-1.ogg": {
+      "text": "Every animal became a fossil",
+      "spoken_text": "Every animal became a fossil",
+      "sha256": "a97248ab46d0be3675ca3139b362575d0748ec674b523e605753225f11f92aa4",
+      "duration": 1.984717
+    },
+    "l5-incomplete-record/l5-incomplete-record-2.ogg": {
+      "text": "Fossils preserve every sound",
+      "spoken_text": "Fossils preserve every sound",
+      "sha256": "6fdf72df58c4681aa244ee461c25ca6670d63eedc6e9fdbb6441580ed6c4bf13",
+      "duration": 2.007937
+    },
+    "l5-incomplete-record/l5-incomplete-record-3.ogg": {
+      "text": "All fossils formed in one day",
+      "spoken_text": "All fossils formed in one day",
+      "sha256": "b7e2e7c3cdafdf14ba3fc1c12686a9a87581cb54a3e9e250fcd808cad9560491",
+      "duration": 1.891837
+    },
+    "l5-incomplete-record/explanation.ogg": {
+      "text": "Fossilisation requires suitable conditions. Many organisms decayed, and soft parts were especially unlikely to survive, so much evidence is missing.",
+      "spoken_text": "Fossilisation requires suitable conditions. Many organisms decayed, and soft parts were especially unlikely to survive, so much evidence is missing.",
+      "sha256": "cfd78f9f8ffb3625d6d4d251298eb4360b78701336058973f9c161861ec9b0c6",
+      "duration": 9.194512
+    },
+    "l5-incomplete-record/hint.ogg": {
+      "text": "Compare dying with being preserved: they are not the same event.",
+      "spoken_text": "Compare dying with being preserved: they are not the same event.",
+      "sha256": "e45f1cf29d9b0475070686fbfd987c30bf45b212f662c6e486207284d0823784",
+      "duration": 3.250204
+    },
+    "l5-bird-ancestry/question.ogg": {
+      "text": "Which statement best describes the relationship between birds and dinosaurs?",
+      "spoken_text": "Which statement best describes the relationship between birds and dinosaurs?",
+      "sha256": "eb88e7de0eb9b5cd665ea8e73aa9f684543b12dfb3f767df309e4f1cbcd852ee",
+      "duration": 4.051293
+    },
+    "l5-bird-ancestry/l5-bird-ancestry-0.ogg": {
+      "text": "Birds evolved from Triceratops",
+      "spoken_text": "Birds evolved from Triceratops",
+      "sha256": "fb3d189c7a80466a013adca322cc37d4a4b2db59f8ad3540dbc5c1589c282326",
+      "duration": 2.054376
+    },
+    "l5-bird-ancestry/l5-bird-ancestry-1.ogg": {
+      "text": "Birds are unrelated to dinosaurs",
+      "spoken_text": "Birds are unrelated to dinosaurs",
+      "sha256": "e6e098c5e5ca7c48cee3056586d35ab82e8ad489a8534c1c8ede4555c135a050",
+      "duration": 2.065986
+    },
+    "l5-bird-ancestry/l5-bird-ancestry-2.ogg": {
+      "text": "Birds evolved within theropod dinosaurs",
+      "spoken_text": "Birds evolved within theropod dinosaurs",
+      "sha256": "f2bcb1545a48bf1f135e5adc2541e7fdaf9d4fc3b9b79186d8c55967138ce91e",
+      "duration": 2.379456
+    },
+    "l5-bird-ancestry/l5-bird-ancestry-3.ogg": {
+      "text": "Birds evolved from pterosaurs",
+      "spoken_text": "Birds evolved from pterosaurs",
+      "sha256": "3d4ecb595c105c2d40e9e4273f33e9d2b5aaf0ccca43ec808041048230bb6848",
+      "duration": 2.054376
+    },
+    "l5-bird-ancestry/explanation.ogg": {
+      "text": "Birds evolved within a branch of theropod dinosaurs. They are living dinosaurs, and pterosaurs were a separate reptile group.",
+      "spoken_text": "Birds evolved within a branch of theropod dinosaurs. They are living dinosaurs, and pterosaurs were a separate reptile group.",
+      "sha256": "3ebd50270340b3c3be1c3bf0ea5dcd47821ad5d8888bec58ca4f6e5702634c19",
+      "duration": 6.535828
+    },
+    "l5-bird-ancestry/hint.ogg": {
+      "text": "Think about the branch that contains feathered dinosaurs.",
+      "spoken_text": "Think about the branch that contains feathered dinosaurs.",
+      "sha256": "cc80e7bc7d832bc92f6617b761df040be48b7274dfe65509cfcf4ffb2684a63c",
+      "duration": 3.076054
+    },
+    "l5-sail-evidence/question.ogg": {
+      "text": "A Spinosaurus fossil has tall back spines. Which claim is directly supported?",
+      "spoken_text": "A Spinosaurus fossil has tall back spines. Which claim is directly supported?",
+      "sha256": "233ccfe988691177cc550550086c349992f6ed378a0cc08b0d2fba5eb827d8c1",
+      "duration": 4.794331
+    },
+    "l5-sail-evidence/l5-sail-evidence-0.ogg": {
+      "text": "The sail was always bright red",
+      "spoken_text": "The sail was always bright red",
+      "sha256": "862eb2c7ba4885a635e653f6eef8510cbb8bd3873e1279c613cd58e9dc356e11",
+      "duration": 1.822177
+    },
+    "l5-sail-evidence/l5-sail-evidence-1.ogg": {
+      "text": "It had tall back spines; their exact function needs more evidence",
+      "spoken_text": "It had tall back spines; their exact function needs more evidence",
+      "sha256": "824e1d6bcf51145cca6a7a7140e4d7ef8850d922c529467d891438d1552ca763",
+      "duration": 3.482404
+    },
+    "l5-sail-evidence/l5-sail-evidence-2.ogg": {
+      "text": "The sail acted exactly like a boat sail",
+      "spoken_text": "The sail acted exactly like a boat sail",
+      "sha256": "3e75157f24bfbee84eee70afb2ace6033061166aacc400ae79d5bc0e21fe480c",
+      "duration": 2.611655
+    },
+    "l5-sail-evidence/l5-sail-evidence-3.ogg": {
+      "text": "Every dinosaur had the same spines",
+      "spoken_text": "Every dinosaur had the same spines",
+      "sha256": "2ed436a340c9d1f5f870642d35515f3a7442ed923418f74aeb4c13ab071cacfb",
+      "duration": 2.251746
+    },
+    "l5-sail-evidence/explanation.ogg": {
+      "text": "Tall back spines are an observed anatomical feature of Spinosaurus. Proposed functions of its sail-like structure need additional evidence and remain subjects of research.",
+      "spoken_text": "Tall back spines are an observed anatomical feature of Spinosaurus. Proposed functions of its sail-like structure need additional evidence and remain subjects of research.",
+      "sha256": "07deb67e02973bfe37033942465487f8bfb42ec76acf44f210716280f9eb54fd",
+      "duration": 8.915873
+    },
+    "l5-sail-evidence/hint.ogg": {
+      "text": "Distinguish a preserved structure from an explanation of its use.",
+      "spoken_text": "Distinguish a preserved structure from an explanation of its use.",
+      "sha256": "9a929c9ec1379871d32dd6bdf367525a6b2f8277a6a8b3a9240504cec9b459fe",
+      "duration": 3.459184
+    },
+    "l5-change-mind/question.ogg": {
+      "text": "What should scientists do when reliable new fossils challenge an old explanation?",
+      "spoken_text": "What should scientists do when reliable new fossils challenge an old explanation?",
+      "sha256": "c5e9af310e817ca9bd0aa9f573e6e3db430f4ef5d604646a11300a15f04931f1",
+      "duration": 4.190612
+    },
+    "l5-change-mind/l5-change-mind-0.ogg": {
+      "text": "Ignore the new fossils",
+      "spoken_text": "Ignore the new fossils",
+      "sha256": "2a646822bbe291e09f3a2d1ea683ab1c5c12248d246e3b37b5c0ea7a0d463051",
+      "duration": 1.648027
+    },
+    "l5-change-mind/l5-change-mind-1.ogg": {
+      "text": "Hide the evidence",
+      "spoken_text": "Hide the evidence",
+      "sha256": "014856502fff4a4f9c18d347ee7e6b16eb6d824770bd146afe38a0f12233aa3d",
+      "duration": 1.322948
+    },
+    "l5-change-mind/l5-change-mind-2.ogg": {
+      "text": "Keep the old explanation forever",
+      "spoken_text": "Keep the old explanation forever",
+      "sha256": "5774fc98e6c43ee48772a6078d57d7dd3ed5eb11addc7a511624b42ae9d3e151",
+      "duration": 1.926667
+    },
+    "l5-change-mind/l5-change-mind-3.ogg": {
+      "text": "Recheck and update the explanation using the evidence",
+      "spoken_text": "Recheck and update the explanation using the evidence",
+      "sha256": "795663ff6cc308b45a546454cdf81b4cdccc728b7fe39609e91fc784517241b0",
+      "duration": 2.867075
+    },
+    "l5-change-mind/explanation.ogg": {
+      "text": "Scientific explanations are tested against evidence. New fossils can lead researchers to revise ideas about dinosaur appearance, behaviour and relationships.",
+      "spoken_text": "Scientific explanations are tested against evidence. New fossils can lead researchers to revise ideas about dinosaur appearance, behaviour and relationships.",
+      "sha256": "4dbfa5b1fc30523c714f3d2b8050333a6357cfa920d41a8a5ae2129924b80609",
+      "duration": 9.124853
+    },
+    "l5-change-mind/hint.ogg": {
+      "text": "Good explanations must fit the available evidence.",
+      "spoken_text": "Good explanations must fit the available evidence.",
+      "sha256": "8710d5accd6c6ff8ceeee70b2626b77d4e59818f5a13497d81a2eb522bfbf0d5",
+      "duration": 2.843855
+    }
+  }
+}

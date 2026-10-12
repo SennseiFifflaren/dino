@@ -33,7 +33,11 @@ data class QuizSession(
 )
 
 @Serializable
-data class GameSettings(val soundEnabled: Boolean = true, val reducedAnimation: Boolean = false)
+data class GameSettings(
+    val soundEnabled: Boolean = true,
+    val reducedAnimation: Boolean = false,
+    val voiceEnabled: Boolean = true,
+)
 
 @Serializable
 data class PlayerProgress(
@@ -42,4 +46,6 @@ data class PlayerProgress(
     val completedLevels: Set<Int> = emptySet(),
     val session: QuizSession? = null,
     val settings: GameSettings = GameSettings(),
+    val parkedSessions: Map<Int, QuizSession> = emptyMap(),
+    val celebrationLevel: Int? = null,
 )
